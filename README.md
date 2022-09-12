@@ -4,4 +4,4 @@
 
 ![Imagen](/imagenes/descarga.jpeg)
 <br>
-Aspirante a Ingeniera en Sistemas Computacionales
+***Aspirante a Ingeniera en Sistemas Computacionales***

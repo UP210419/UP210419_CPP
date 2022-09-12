@@ -4,4 +4,3 @@
 
 ![Imagen](/imagenes/descarga.jpeg)
 <br>
-<h1 font color="#FF5733">Holaaa</h1>

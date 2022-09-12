@@ -4,4 +4,4 @@
 
 ![Imagen](/imagenes/descarga.jpeg)
 <br>
-<div color="#FF5733>Aspirante a...</div>
+<h1><div style=color:"#FF5733>Holaaaa</div></h1>

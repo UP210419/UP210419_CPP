@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+#omite archivos sin extension 
+*
+!*.*
+!/*.*/

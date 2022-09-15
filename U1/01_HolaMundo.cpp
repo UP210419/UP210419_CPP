@@ -2,22 +2,21 @@
 Date: 12/09/22
 Author: Andrea Sofia Orozco Morán 
 Email: up210419@alumnos.upa.edu.mx 
-Description: 
-Mi primer programa en C++
+DEscription: Mi primer programa en C++
 */
 
-//------PREPROCESSOR DIRECTIVES------
+//---------PREPROCESSOR DIRECTIVES-----
 
-//io-input/output y stream-flujo 
-//Input/output library between the screen n'keyboard 
-#include <iostream> 
+//io: input/output, stream: flujo
+//Input/Output library between the screen n'ḱeyboard 
+#include <iostream>
 
-//--------MAIN FUNCTION--------
-int main (){
+//--------MAIN FUNCTION-------
+int main(){
 
     //Prints on screen a text 
-    std::cout  << "Hello World this is my first programm";
+    std::cout << "Hello World this is my first program" <<std::endl;
 
-    //Return 0 means that the programm ends succesfully 
+    //Return 0 means that the program ends succesfully
     return 0;
 }

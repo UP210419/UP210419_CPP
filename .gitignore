@@ -34,4 +34,4 @@
 #omite archivos sin extension 
 *
 !*.*
-!/*.*/
+!/**/

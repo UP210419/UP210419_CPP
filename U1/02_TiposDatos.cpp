@@ -13,7 +13,7 @@ Descripción: Muestra los diferentes tipos de datos en c++
 using namespace std;
 
 //Función principal de tipo entero 
-int maii(){
+int main(){
 
     //Más información en:
     //https://www.geeksforgeeks.org/c-data-types/
@@ -38,8 +38,10 @@ int maii(){
     //https://cplusplus.com/reference/cstdio/printf
     printf("Usando la función printf\n");
     printf("El número entero : %i \n", entero);
-    printf("El número flotante es: %3.1f \n", flotante);
+    printf("El número flotante es: %3.1f \n", flotante); 
 
+    cout <<std::endl;
+    
     //Al ser una función debe retornar un valor, en este caso 0
     return 0;
 }

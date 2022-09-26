@@ -34,33 +34,28 @@ int main(){
    if(renta < 10000){
     cout << "Tu impuesto es de 5%";
     impuesto = renta * .05;
-    cout << "\n El impuesto a pagar es de: $" << impuesto;
    }
 
    if((renta >= 10000) && (renta <= 20000)){
     cout << "Tu impuesto es de 15%";
     impuesto = renta * .15;
-    cout << "\n El impuesto a pagar es de: $" << impuesto;
    }
 
    if((renta >= 20000) && (renta <= 35000)){
     cout << "Tu impuesto es de 20%";
     impuesto = renta * .2;
-    cout << "\n El impuesto a pagar es de: $" << impuesto;
    }
 
    if((renta >= 35000) && (renta <= 60000)){
     cout << "Tu impuesto es de 30%";
     impuesto = renta * .3;
-    cout << "\n El impuesto a pagar es de: $" << impuesto;
    }
 
    if(renta > 60000){
     cout << "Tu impuesto es de 60%";
     impuesto = renta * .45;
-    cout << "\n El impuesto a pagar es de: $" << impuesto;
    }
-
-    cout << endl; 
-    return 0; 
+   cout << "\nEl impuesto a pagar es de: $" << impuesto;
+   cout << endl; 
+   return 0; 
 }

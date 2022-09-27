@@ -1,14 +1,12 @@
 
 ## UP210419_CPP
+#Universidad Politécnica de Aguascalientes 
 # ¡Welcome to the Repository of Sofia!
 ## ***Materia de Programación***
 
-Unidad 1. 
-  - Tipos de datos 
-Unidad 2.
-  - Uso de if 
-Unidad 3.
-  - ...
+## Andrea Sofia Orozco Morán 
+## Ingeniería en Sistemas Computacionales 
+
 
 ![Imagen](/imagenes/descarga.jpeg)
 <br>

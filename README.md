@@ -4,7 +4,7 @@
 # ¡Welcome to the Repository of Sofia!
 ## ***Materia de Programación***
 
-## Andrea Sofia Orozco Morán <br>
+## Andrea Sofia Orozco Morán
 ## Ingeniería en Sistemas Computacionales 
 
 

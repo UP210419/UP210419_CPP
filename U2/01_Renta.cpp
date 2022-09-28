@@ -1,6 +1,5 @@
 /*
-Unidad 2
-Ejercicio 1. Renta anual e impuesto
+Unidad 2. Uso del if 
 Author: Andrea Sofia Orozco Morán 
 Date: 22/09/22
 Description: Muestra el uso de if simple 

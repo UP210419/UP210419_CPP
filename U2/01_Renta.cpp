@@ -1,8 +1,10 @@
 /*
 Unidad 2. Uso del if 
 Author: Andrea Sofia Orozco Morán 
-Date: 22/09/22
-Description: Muestra el uso de if simple 
+Fecha: 22/09/22
+Descripción: Muestra el uso de if simple 
+Los tramos impositivos para la declaración de la renta 
+en un determinado país 
 */
 
 //Librería para manejo de entradas y salida de pantalla 
@@ -28,7 +30,9 @@ int main(){
 
    int renta; 
    float impuesto;
-   cout << "¿Cuál es su renta anual? \n";
+
+   //Solicuta renta anual 
+   cout << "Cuál es su renta anual \n";
    cin >> renta;
 
    if(renta < 10000){
@@ -55,7 +59,9 @@ int main(){
     cout << "Tu impuesto es de 60%";
     impuesto = renta * .45;
    }
+   //Imprime el resultado de impuesto correspondiente
    cout << "\nEl impuesto a pagar es de: $" << impuesto;
    cout << endl; 
+   //Al ser una función debe retornar un valor, en este caso 0
    return 0; 
 }

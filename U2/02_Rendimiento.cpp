@@ -1,9 +1,8 @@
 /*
-Unidad 2. 
-Ejercicio 2. Nivel de rendimiento y ganancia 
+Unidad 2. Uso del if 
 Author: Andrea Sofia Orozco Morán 
-Date: 26/09/22
-Description: Muestra uso de if - else 
+Fecha: 26/09/22
+Descripción: Muestra uso de if - else
 */
 
 //Este prograna indica el nivel de rendimiento de cada empleado en una empresa, y la cantidad de dinero que recibirá
@@ -37,5 +36,6 @@ int main(){
         cout << "\nTu nivel de rendimiento no es aceptable \n";
     }
     cout << endl;
+    //Al ser una función debe retornar un valor, en este caso 0
     return 0;
 }

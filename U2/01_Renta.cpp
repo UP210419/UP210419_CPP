@@ -1,8 +1,9 @@
 /*
-Unidad 2: Uso de if 
+Unidad 2
+Ejercicio 1. Renta anual e impuesto
 Author: Andrea Sofia Orozco Morán 
-Fecha: 22/09/22
-Descripción: Muestra el uso de if simple 
+Date: 22/09/22
+Description: Muestra el uso de if simple 
 */
 
 //Librería para manejo de entradas y salida de pantalla 

@@ -2,7 +2,7 @@
 Unidad 2. Uso de if 
 Author: Andrea Sofia Orozco Morán 
 Fecha: 21/09/22
-DEscripción: Muestra el uso de if simple 
+Descripción: Muestra el uso de if simple 
 */
 
 //Libreria para manejo de entradas y salidas de pantalla 

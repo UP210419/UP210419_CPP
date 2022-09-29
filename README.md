@@ -1,8 +1,7 @@
 
 <h1 align="center"> ¡Welcome to the Repository of Sofia </h1>
-<h3 align="center"> Materia de programación </h3>
+<h2 align="center"> Materia de programación </h2>
 
-Hola, este es mi README 
-
+![C++](/imagenes/curso-cpp-facialix.jpg)
 ![Imagen](/imagenes/descarga.jpeg)
 

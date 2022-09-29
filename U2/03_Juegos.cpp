@@ -1,6 +1,5 @@
 /*
 Unidad 2. Uso del if 
-Ejercicio 3
 Author: Andrea Sofia Orozco Morán 
 Fecha: 28/09/22
 Descripción: Muestra el uso del if 

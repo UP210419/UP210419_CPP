@@ -3,10 +3,12 @@
 
 ## **C++ Programming course**
 <div align ="center">
-<img alt="c++" height="100" src="imagenes/curso-cpp-facialix.jpg"/>
+<img alt="c++" height="150" src="imagenes/curso-cpp-facialix.jpg"/>
 </div>
 
+<div align ="center">
+<img alt="c++" height="150" src="imagenes/descarga.jpeg"/>
+</div>
 
-![Imagen](/imagenes/descarga.jpeg)
 
 

@@ -1,6 +1,5 @@
-<center>
-# ¡Welcome to the Repository of Sofia!
-</center>
+
+# ¡Welcome to the Repository of Sofia
 ## ***Materia de Programación***
 
 ![Imagen](/imagenes/descarga.jpeg)

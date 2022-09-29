@@ -1,6 +1,6 @@
 
 <h1 align="center"> ¡Welcome to the Repository of Sofia </h1>
-<h2> Materia de programación </h2>
+<h3 align="center"> Materia de programación </h3>
 
 Hola, este es mi README 
 

@@ -1,7 +1,8 @@
 
 <h1 align="center"> ¡Welcome to the Repository of Sofia </h1>
-<br>
 <h2> Materia de programación </h2>
+
+Hola, este es mi README 
 
 ![Imagen](/imagenes/descarga.jpeg)
 

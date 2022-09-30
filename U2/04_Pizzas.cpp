@@ -15,15 +15,17 @@ int main(){
 
     cout << "Eliga su piza v/nv";
     cin >> resp;
+    
     if(resp == 'v'){
-        cout << "MENÚ VEGETARIANO \n
-                1. Pimiento \n
-                2. Tofu";
+        cout << "MENÚ VEGETARIANO\n"; 
+        cout << "pimiento\n";
+        cout << "tofu";
     }else if(resp == 'nv'){
-        cout << "MENÚ NO VEGETARIANO \n
-                1. Peperoni \n
-                2. Jamón \n
-                3. Salmón";
+        cout << "MENÚ NO VEGETARIANO\n";
+        cout << "Peperoni\n";
+        cout << "Jamón\n";
+        cout << "Salmón";
     }
+    cout << endl;
     return 0;
 }

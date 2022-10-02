@@ -32,7 +32,7 @@ int main(){
    float impuesto;
 
    //Solicuta renta anual 
-   cout << "Cuál es su renta anual \n";
+   cout << "Cual es su renta anual \n";
    cin >> renta;
 
    if(renta < 10000){

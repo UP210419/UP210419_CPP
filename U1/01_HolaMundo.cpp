@@ -1,8 +1,9 @@
 /*
-Date: 12/09/22
+Unidad 1.
 Author: Andrea Sofia Orozco Morán 
+Fecha: 12/09/22
 Email: up210419@alumnos.upa.edu.mx 
-DEscription: Mi primer programa en C++
+DEscripciión: Mi primer programa en C++
 */
 
 //---------PREPROCESSOR DIRECTIVES-----

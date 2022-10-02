@@ -1,6 +1,6 @@
 /*
 Unidad 1. Tipos de datos 
-Authhor: Andrea Sofia Orozco Morán 
+Author: Andrea Sofia Orozco Morán 
 Descripción: Muestra los diferentes tipos de datos en c++
 */
 

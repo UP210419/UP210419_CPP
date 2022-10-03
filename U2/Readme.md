@@ -116,7 +116,7 @@ if(edad < 4){
 ```
 **Explanation** 
 ```c++
-//Este programa indica el precio de boleto a pagar por edades 
+//This program indicates the ticket price to be paid by ages
 ```
 
 ***Screenshots*** 

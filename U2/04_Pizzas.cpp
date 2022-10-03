@@ -44,14 +44,14 @@ int main(){
         cout << "\nEliga sus ingredientes\n";
         cin >> ingredienten; 
         if(ingredienten = 1){
-            cout << "Pizza con peperoni";
+            cout << "Pizza con peperoni\n";
         }else if(ingredienten = 2){
-             cout << "Pizza con jamon";
+             cout << "Pizza con jamon\n";
         }else if(ingredienten = 3){
-            cout << "Pizza con salmon";
+            cout << "Pizza con salmon\n";
         }
     }
-    cout << "\nSu pedido es: \n"; 
+    cout << "\nPedido \n"; 
     cout << endl;
     return 0;
 }

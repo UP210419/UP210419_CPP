@@ -3,7 +3,8 @@ Unidad 2. Uso del if
 Author: Andrea Sofia Orozco Morán 
 Fecha: 28/09/22
 Descripción: Muestra uso del if 
-
+La pizzeria Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus 
+clientes. Los ingredientes para cada tipo de pizza aparecen a continuación
 */
 
 //Libreria para manejo de entradas y salida de pantalla

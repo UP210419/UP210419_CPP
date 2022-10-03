@@ -3,8 +3,8 @@ Unidad 2. Uso del if
 Author: Andrea Sofia Orozco Morán 
 Fecha: 26/09/22
 Descripción: Muestra uso de if - else
-En una determinada empresa, sus empleados son 
-evaluados al final de cada año. 
+En una determinada empresa, sus empleados son evaluados 
+al final de cada año
 */
 
 //Este prograna indica el nivel de rendimiento de cada empleado en una empresa, y la cantidad de dinero que recibirá

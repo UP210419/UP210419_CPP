@@ -31,7 +31,7 @@ int main(){
    int renta; 
    float impuesto;
 
-   //Solicuta renta anual 
+   //Solicita renta anual 
    cout << "Cual es su renta anual \n";
    cin >> renta;
 

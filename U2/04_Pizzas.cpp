@@ -6,9 +6,13 @@ Descripción: Muestra uso del if
 
 */
 
+//Libreria para manejo de entradas y salida de pantalla
 #include <iostream>
 
+//Uso de namespace para evitar el std::
 using namespace std;
+
+//Función principal de tipo entero 
 int main(){
 
     char pizza;

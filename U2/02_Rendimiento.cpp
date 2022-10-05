@@ -19,9 +19,9 @@ using namespace std;
 int main(){
 
     float puntuacion; 
-    float inaceptable = inaceptable;
-    float aceptable = aceptable;
-    float meritorio = meritorio;
+    float inaceptable = 0.0;
+    float aceptable = 0.4;
+    float meritorio = 0.6;
     float ganancia; 
 
     //Solicita puntuación del empleado

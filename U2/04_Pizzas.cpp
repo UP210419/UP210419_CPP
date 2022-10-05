@@ -16,42 +16,62 @@ using namespace std;
 //Función principal de tipo entero 
 int main(){
 
-    char pizza;
-    char ingredientev;
-    char ingredienten;
+    int pizza;
+    int ingrediente;
 
-    cout << "Pizza vegetariana o no vegetariana \n";
+    cout << "Indique aqui la pizza que desea ordenar \n";
+    cout << "1. Vegetariana \n";
+    cout << "2. No vegetariana \n";
     cin >> pizza;
-    if((pizza == 'v') || (pizza == 'V')){
-        cout << "MENU VEGETARIANO \n"; 
+    
+    if(pizza == 1){
+        cout << "\nMENU VEGETARIANO \n"; 
         cout << "1. Pimiento \n";
         cout << "2. Tofu \n";
 
-        cout << "\nEliga sus ingredientes \n";
-        cin >> ingredientev; 
-        if(ingredientev = 1){
-            cout << "Pizza con pimiento";
-        }else if(ingredientev = 2){
-            cout << "Pizza con tofu";
+        cout << "\nEliga el ingrediente extra que desea agregar \n";
+        cin >> ingrediente; 
+        if(ingrediente == 1){
+            cout << "\nPedido \n"; 
+            cout << "Pizza vegetariana \n";
+            cout << "Mozzarella y tomate \n";
+            cout << "Ingrediente extra: \n";
+            cout << "Pimiento";
+        }else if(ingrediente == 2){
+            cout << "\nPedido \n"; 
+            cout << "Pizza vegetariana \n";
+            cout << "Mozzarella y tomate \n";
+            cout << "Ingrediente extra: \n";
+            cout << "Tofu";
         }
-
-    }else if((pizza == 'n') || (pizza == 'N')){
-        cout << "MENU NO VEGETARIANO\n";
+    }else if(pizza == 2){
+        cout << "\nMENU NO VEGETARIANO\n";
         cout << "1. Peperoni\n";
         cout << "2. Jamon\n";
         cout << "3. Salmon";
 
         cout << "\nEliga sus ingredientes\n";
-        cin >> ingredienten; 
-        if(ingredienten = 1){
-            cout << "Pizza con peperoni\n";
-        }else if(ingredienten = 2){
-             cout << "Pizza con jamon\n";
-        }else if(ingredienten = 3){
-            cout << "Pizza con salmon\n";
+        cin >> ingrediente; 
+        if(ingrediente == 1){
+            cout << "\nPedido \n"; 
+            cout << "Pizza vegetariana \n";
+            cout << "Mozzarella y tomate \n";
+            cout << "Ingrediente extra: \n";
+            cout << "Peperoni";
+        }else if(ingrediente == 2){
+            cout << "\nPedido \n"; 
+            cout << "Pizza vegetariana \n";
+            cout << "Mozzarella y tomate \n";
+            cout << "Ingrediente extra: \n";
+            cout << "Jamon";
+        }else if(ingrediente == 3){
+            cout << "\nPedido \n"; 
+            cout << "Pizza vegetariana \n";
+            cout << "Mozzarella y tomate \n";
+            cout << "Ingrediente extra: \n";
+            cout << "Salmon";
         }
     }
-    cout << "\nPedido \n"; 
     cout << endl;
     return 0;
 }

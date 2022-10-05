@@ -125,18 +125,52 @@ if(edad < 4){
 
 ***Input***
 ```c++
-cout << "Pizza vegetariana o no vegetariana \n";
-cin >> pizza;
+cout << "Indique aqui la pizza que desea ordenar \n";
+    cout << "1. Vegetariana \n";
+    cout << "2. No vegetariana \n";
+    cin >> pizza;
 ```
 
 ***Process***
 ```c++
+if(pizza == 1){
+        cout << "\nMENU VEGETARIANO \n"; 
+        cout << "1. Pimiento \n";
+        cout << "2. Tofu \n";
 
+        cout << "\nEliga el ingrediente extra que desea agregar \n";
+        cin >> ingrediente; 
+        if(ingrediente == 1){
+        
+        }else if(ingrediente == 2){
+
+        }
+}else if(pizza == 2){
+        cout << "\nMENU NO VEGETARIANO\n";
+        cout << "1. Peperoni\n";
+        cout << "2. Jamon\n";
+        cout << "3. Salmon";
+
+        cout << "\nEliga sus ingredientes\n";
+        cin >> ingrediente; 
+        if(ingrediente == 1){
+        
+        }else if(ingrediente == 2){
+
+        }else if(ingrediente == 3){
+
+        }
+}
 ```
 
 ***Output*** 
 ```c++
-cout << "\nSu pedido es: \n"; 
+//if 
+cout << "\nPedido \n"; 
+cout << "Pizza vegetariana \n";
+cout << "Mozzarella y tomate \n";
+cout << "Ingrediente extra: \n";
+//cout << "Pimiento, Tofu, Peperoni, Jamon, Salmon";
 cout << endl;
 ```
 **Explanation** 

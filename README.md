@@ -19,7 +19,7 @@
 
 <font size=4 face="Calibri"> Here you will find all the folders that take during the course , as well as the exercices for each unit. </font>
 
-<font size=4 face="">
+### <font size=4 face="Times New Roman">
 
 ><a href="https://github.com/UP210419/UP210419_CPP/blob/main/U1/Readme.md">Unidad 1</a>
 <br>
@@ -31,7 +31,7 @@
 
 </font>
 
-<font size=4 face="Calibri">
+### <font size=4 face="Calibri">
 To clone this repo, type this command on your console.
 
 > https://github.com/UP210419/UP210419_CPP.git

@@ -21,22 +21,20 @@
 
 ### <font size=4 face="Times New Roman">
 
-><a href="https://github.com/UP210419/UP210419_CPP/blob/main/U1/Readme.md">Unidad 1</a>
+> [Unidad 1](https://github.com/UP210419/UP210419_CPP/blob/main/U1/Readme.md)
 <br>
 
-><a href="https://github.com/UP210419/UP210419_CPP/blob/main/U2/Readme.md">Unidad 2</a>
+> [Unidad 2](https://github.com/UP210419/UP210419_CPP/blob/main/U2/Readme.md)
 <br> 
 
-><a href="https://github.com/UP210419/UP210419_CPP/blob/main/U3/Readme.md">Unidad 3</a>
+> [Unidad 3](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Readme.md)
 
 </font>
 
-### <font size=4 face="Calibri">
-To clone this repo, type this command on your console.
+### To clone this repo, type this command on your console.
 
 > https://github.com/UP210419/UP210419_CPP.git
 
-</font>
 
 
 

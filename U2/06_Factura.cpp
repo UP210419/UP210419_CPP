@@ -15,13 +15,13 @@ int main(){
     int precio; 
     int total; 
 
-    cout << "Cantidad de pproductos que vas a comprar: ";
+    cout << "Cantidad de productos que vas a comprar: ";
     cin >> cant; 
     cout << "Precio de producto: ";
     cin >> precio;
     do{
-        total = cant * precio; 
-        total = total + 1; 
+        contador = cant * precio; 
+        total = total + (cant * precio);
         contador ++;
     }while(contador <= 0);
     cout << "factura: " << total;

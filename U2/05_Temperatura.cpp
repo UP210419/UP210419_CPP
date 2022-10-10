@@ -1,7 +1,7 @@
 /*
 Unidad 2
 Author: Andrea Sofia Orozco Morán 
-Fecha: 03/09/22
+Fecha: 03/10/22
 */
 
 #include <iostream>

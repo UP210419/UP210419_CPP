@@ -3,11 +3,25 @@
 ### **Exercise 1: Write a program that asks the user for their annual income and shows the corresponding tax on the screen.**
 
 ```c++
+//Librería para manejo de entradas y salida de pantalla 
 #include <iostream>
+
+//Uso del namespace para evitar el std::
+using namespace std; 
+
+//Función principal de tipo entero 
+int main(){
+
+}
+```
+**Explanation** 
+```c++
+//This program indicates the tax to pay for annual income payment
 ```
 
 ***Input*** 
 ```c++
+//Solicita pago de renta anual
 cout << "Cual es su renta anual \n";
 cin >> renta;
 ```
@@ -15,23 +29,23 @@ cin >> renta;
 ***Process*** 
 ```c++
 if(renta < 10000){
-    cout << "Tu impuesto es de 5%";
+    cout << "Tu impuesto es de 5%"; //Impositivo de 5%
     impuesto = renta * .05;
 }
 if((renta >= 10000) && (renta <= 20000)){
-    cout << "Tu impuesto es de 15%";
+    cout << "Tu impuesto es de 15%"; //Impositivo de 15%
     impuesto = renta * .15;
 }
 if((renta >= 20000) && (renta <= 35000)){
-    cout << "Tu impuesto es de 20%";
+    cout << "Tu impuesto es de 20%"; //Impositivo de 20%
     impuesto = renta * .2;
 }
 if((renta >= 35000) && (renta <= 60000)){
-    cout << "Tu impuesto es de 30%";
+    cout << "Tu impuesto es de 30%"; //Impositivo de 30%
     impuesto = renta * .3;
 }
 if(renta > 60000){
-    cout << "Tu impuesto es de 60%";
+    cout << "Tu impuesto es de 60%"; //Impositivo de 60%
     impuesto = renta * .45;
 }
 ```
@@ -40,11 +54,6 @@ if(renta > 60000){
 ```c++
 cout << "\nEl impuesto a pagar es de: $" << impuesto;
 cout << endl; 
-```
-
-**Explanation** 
-```c++
-//This program indicates the tax to pay for annual income payment
 ```
 
 ***Screenshots***

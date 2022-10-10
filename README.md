@@ -17,7 +17,7 @@
 
 ## <font color=blue face="Times new roman"> **Main structure** </font>
 
-<font size=4 face="Calibri"> Here you will find all the folders that take during the course , as well as the exercices for each unit. </font>
+<font size=4 face="Calibri"> Here you will find all the folders that take during the course, as well as the exercices for each unit. </font>
 
 ### <font size=4 face="Times New Roman">
 
@@ -29,11 +29,13 @@
 
 > [Unidad 3](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Readme.md)
 
-</font>
 
 ### To clone this repo, type this command on your console.
 
 > https://github.com/UP210419/UP210419_CPP.git
+
+</font>
+
 
 
 

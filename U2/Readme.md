@@ -2,90 +2,106 @@
 
 ### **Exercise 1: Write a program that asks the user for their annual income and shows the corresponding tax on the screen.**
 
+***C++***
 ```c++
-//Librería para manejo de entradas y salida de pantalla 
+//Library for handling screen inputs and outputs 
 #include <iostream>
 
-//Uso del namespace para evitar el std::
+//Using the namespace to avoid the std::
 using namespace std; 
+```
 
-//Función principal de tipo entero 
+***Input***
+```c++ 
+//Integer main function 
 int main(){
 
-}
-```
-**Explanation** 
-```c++
-//This program indicates the tax to pay for annual income payment
+    //Declarate var
+    int renta; 
+    float impuesto;
 ```
 
-***Input*** 
+***Process***
 ```c++
-//Solicita pago de renta anual
-cout << "Cual es su renta anual \n";
-cin >> renta;
-```
-
-***Process*** 
-```c++
-if(renta < 10000){
-    cout << "Tu impuesto es de 5%"; //Impositivo de 5%
-    impuesto = renta * .05;
-}
-if((renta >= 10000) && (renta <= 20000)){
-    cout << "Tu impuesto es de 15%"; //Impositivo de 15%
-    impuesto = renta * .15;
-}
-if((renta >= 20000) && (renta <= 35000)){
-    cout << "Tu impuesto es de 20%"; //Impositivo de 20%
-    impuesto = renta * .2;
-}
-if((renta >= 35000) && (renta <= 60000)){
-    cout << "Tu impuesto es de 30%"; //Impositivo de 30%
-    impuesto = renta * .3;
-}
-if(renta > 60000){
-    cout << "Tu impuesto es de 60%"; //Impositivo de 60%
-    impuesto = renta * .45;
-}
+//Use of income if less than $10,000
+    if(renta < 10000){
+        cout << "Tu impuesto es de 5%"; //Tax of 5%
+        impuesto = renta * .05; with tax of 5%
+    }
+//Use of income if between $10,000 and $20,000
+    if((renta >= 10000) && (renta <= 20000)){
+        cout << "Tu impuesto es de 15%"; //Tax of 15%
+        impuesto = renta * .15; 
+    }
+//Use of income if between $20,000 and $35,000
+    if((renta >= 20000) && (renta <= 35000)){
+        cout << "Tu impuesto es de 20%"; //Tax of 20%
+        impuesto = renta * .2; 
+    }
+//Use of income if between $35,000 and $60,000
+    if((renta >= 35000) && (renta <= 60000)){
+        cout << "Tu impuesto es de 30%"; //Tax of 30%
+        impuesto = renta * .3; 
+    }
+//Use of income if greater than $60,000
+    if(renta > 60000){
+        cout << "Tu impuesto es de 60%"; //Tax of 60%
+        impuesto = renta * .45; 
+    }
 ```
 
 ***Output***
 ```c++
+//Print total payment with tax to pay 
 cout << "\nEl impuesto a pagar es de: $" << impuesto;
 cout << endl; 
+}
 ```
 
 ***Screenshots***
 
+
 ### **Exercise 2: Write a program that reads the user's score and indicates their level of performance, as well as the amount of money the user will receive.**
 
+***C++***
 ```c++
+//Library for handling screen inputs and outputs 
 #include <iostream>
-```
 
-***Input***
-```c++
-cout << "Su puntuacion es: \n";
-cin >> puntuacion;
-```
+//Using the namespace to avoid the std::
+using namespace std; 
 
-***Process*** 
-```c++
-if(puntuacion == inaceptable){
-    cout << "\nTu nivel de rendimiento es inaceptable";
-    ganancia = inaceptable * 2400;
-    cout << "\n\nTu ganancia es de: \n$" << ganancia; //Output
-}else if(puntuacion == aceptable){
-    cout << "\nTu nivel de rendimiento es aceptable"; 
-    ganancia = aceptable * 2400;
-    cout << "\n\nTu ganancia es de: \n$" << ganancia; //Output
-}else if(puntuacion >= meritorio){
-    cout << "\nTu nivel de rendimiento es meritorio";
-    ganancia = meritorio * 2400;
-    cout << "\n\nTu ganancia es de: \n$" << ganancia; //Output
-}else{
-    cout << "\nTu nivel de rendimiento no es aceptable \n";
+//Integer main function 
+int main(){
+
+    //INPUT 
+    //Declarate var
+    cout << "Su puntuacion es: \n";
+    cin >> puntuacion;
+
+    //PROCESS 
+    //Use if 
+    if(puntuacion == inaceptable){
+        cout << "\nTu nivel de rendimiento es inaceptable";
+        ganancia = inaceptable * 2400;
+        cout << "\n\nTu ganancia es de: \n$" << ganancia; //OUTPUT
+    }
+    else if(puntuacion == aceptable){
+        cout << "\nTu nivel de rendimiento es aceptable"; 
+        ganancia = aceptable * 2400;
+        cout << "\n\nTu ganancia es de: \n$" << ganancia; //OUTPUT
+    }
+    else if(puntuacion >= meritorio){
+        cout << "\nTu nivel de rendimiento es meritorio";
+        ganancia = meritorio * 2400;
+        cout << "\n\nTu ganancia es de: \n$" << ganancia; //OUTPUT
+    }
+    else{
+        cout << "\nTu nivel de rendimiento no es aceptable \n";
+    }
+    cout << endl;
+    //Being a function, it must return a value, in this case 0
+    return 0;
 }
 ```
 
@@ -96,33 +112,41 @@ if(puntuacion == inaceptable){
 
 ***Screenshots*** 
 
+
 ### **Exercise 3: Write a program for a company that has game rooms for all ages and wants to automatically calculate the price to charge its customers to enter.**
 
+***C++***
 ```c++
+//Library for handling screen inputs and outputs 
 #include <iostream>
-``` 
 
-***Input*** 
-```c++
-cout << "Indique su edad \n";
-cin >> edad;
-``` 
+//Using the namespace to avoid the std::
+using namespace std; 
 
-***Process*** 
-```c++
-if(edad < 4){
-    cout << "\nSu entrada es gratis"; //Se imprime resultado
-}else if((edad >= 4) && (edad <= 18)){
-    cout << "\nDebe pagar $5"; //Se imprime resultado
-}else if(edad > 18){
-    cout << "Debe pagar $10"; //Se imprime resultado
+int main(){
+
+    //INPUT 
+    //Declarate var 
+    cout << "Indique su edad \n";
+    cin >> edad;
+
+    //PROCESS 
+    //Use if 
+    if(edad < 4){
+        cout << "\nSu entrada es gratis"; //OUTPUT
+    }
+    else if((edad >= 4) && (edad <= 18)){
+        cout << "\nDebe pagar $5"; //OUTPUT
+    }
+    else if(edad > 18){
+        cout << "Debe pagar $10"; //OUTPUT
+    }
+    cout << endl; 
+    //Being a function, it must return a value, in this case 0
+    return 0;
 }
 ```
 
-***Output*** 
-```c++
-
-```
 **Explanation** 
 ```c++
 //This program indicates the ticket price to be paid by ages
@@ -130,19 +154,31 @@ if(edad < 4){
 
 ***Screenshots*** 
 
+
 ### **Exercise 4: Write a program that asks the user if he wants vegetarian pizza or not, and based on his answer shows him the menu with the ingredients available for him to choose from. You can only choose one ingredient besides the mozzarella and tomato that are on all the pizzas.**
 
-***Input***
+***C++***
 ```c++
-cout << "Indique aqui la pizza que desea ordenar \n";
+//Library for handling screen inputs and outputs 
+#include <iostream>
+
+//Using the namespace to avoid the std::
+using namespace std; 
+
+int mainI(){
+
+    //INPUT 
+    //Declarate var
+
+    //
+    cout << "Indique aqui la pizza que desea ordenar \n";
     cout << "1. Vegetariana \n";
     cout << "2. No vegetariana \n";
     cin >> pizza;
-```
 
-***Process***
-```c++
-if(pizza == 1){
+    //PROCESS 
+    //Use if 
+    if(pizza == 1){
         cout << "\nMENU VEGETARIANO \n"; 
         cout << "1. Pimiento \n";
         cout << "2. Tofu \n";
@@ -169,6 +205,7 @@ if(pizza == 1){
         }else if(ingrediente == 3){
 
         }
+}
 }
 ```
 

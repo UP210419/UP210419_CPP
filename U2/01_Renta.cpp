@@ -7,13 +7,9 @@ Los tramos impositivos para la declaración de la renta
 en un determinado país 
 */
 
-//Librería para manejo de entradas y salida de pantalla 
 #include <iostream>
 
-//Uso del namespace para evitar el std::
 using namespace std;
-
-//Función principal de tipo entero 
 int main(){
 
     /*
@@ -31,7 +27,6 @@ int main(){
    int renta; 
    float impuesto;
 
-   //Solicita renta anual 
    cout << "Cual es su renta anual \n";
    cin >> renta;
 
@@ -39,29 +34,23 @@ int main(){
     cout << "Tu impuesto es de 5%";
     impuesto = renta * .05;
    }
-
    if((renta >= 10000) && (renta <= 20000)){
     cout << "Tu impuesto es de 15%";
     impuesto = renta * .15;
    }
-
    if((renta >= 20000) && (renta <= 35000)){
     cout << "Tu impuesto es de 20%";
     impuesto = renta * .2;
    }
-
    if((renta >= 35000) && (renta <= 60000)){
     cout << "Tu impuesto es de 30%";
     impuesto = renta * .3;
    }
-
    if(renta > 60000){
     cout << "Tu impuesto es de 60%";
     impuesto = renta * .45;
    }
-   //Imprime el resultado de impuesto correspondiente
    cout << "\nEl impuesto a pagar es de: $" << impuesto;
    cout << endl; 
-   //Al ser una función debe retornar un valor, en este caso 0
    return 0; 
 }

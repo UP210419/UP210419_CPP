@@ -10,20 +10,24 @@ Descripción: Uso de ciclo Do-While
 using namespace std; 
 int main(){
 
-    int contador;
+    int contador = 0;
     int cant; 
     int precio; 
     int total; 
 
-    cout << "Cantidad de productos que vas a comprar: ";
-    cin >> cant; 
-    cout << "Precio de producto: ";
-    cin >> precio;
+
     do{
-        contador = cant * precio; 
-        total = total + (cant * precio);
-        contador ++;
-    }while(contador <= 0);
+        cout << "Cantidad de productos que vas a comprar: ";
+        cin >> cant; 
+
+        if(cant != 0){
+            cout << "Precio de producto: ";
+            cin >> precio;
+
+            total = total + (cant * precio);
+        } 
+
+    }while(cant != 0);
     cout << "factura: " << total;
     return 0;
 }

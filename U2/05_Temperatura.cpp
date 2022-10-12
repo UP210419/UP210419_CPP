@@ -9,7 +9,7 @@ Fecha: 03/10/22
 using namespace std; 
 int main(){
 
-    int contador = 0;
+    int contador = 1;
     float temperatura;
     float AcumTemp=0;
     float promedio;   

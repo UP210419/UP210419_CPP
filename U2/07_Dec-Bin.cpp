@@ -15,16 +15,16 @@ int main(){
     int num; 
     int bin; 
 
-    cout << "Introduce un numero";
+    cout << "Introduce un numero ";
     cin >> num; 
 
     while(num != 0){
         if(num%2 == 0){
-            bin = "0" + bin;
+            bin = '0' + bin;
         }else{
-            bin = "1" + bin; 
+            bin = '1' + bin; 
         }
-        num = num / 2;  
+        num /= 2;  
     }
     cout << "Numero binario: " << bin;
     cout << endl; 

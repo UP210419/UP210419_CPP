@@ -14,18 +14,16 @@ int main(){
     int cant; 
     int precio; 
     int total; 
-
+    int pago;
 
     do{
         cout << "Cantidad de productos que vas a comprar: ";
         cin >> cant; 
-
-        if(cant != 0){
-            cout << "Precio de producto: ";
-            cin >> precio;
-
-            total = total + (cant * precio);
-        } 
+        cout << "Precio de producto: ";
+        cin >> precio;
+            
+        pago = cant * precio;
+        total = total + pago;       
 
     }while(cant != 0);
     cout << "factura: " << total;

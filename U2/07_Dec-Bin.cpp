@@ -14,24 +14,19 @@ int main(){
 
     int num; 
     string bin = ""; 
-    char r = 's'; 
-
+    
     cout << "Introduce un numero cualquiera ";
     cin >> num; 
 
-    while(r == 's'){
-        while(num != 0){
-            if(num%2 == 0){
-                bin = "0" + bin;
-            }else{
-                bin = "1" + bin; 
-            }
-            num = num/2;  
+    while(num != 0){
+        if(num%2 == 0){
+            bin = "0" + bin;
+        }else{
+            bin = "1" + bin; 
         }
-        cout << "Numero binario: " << bin;
-        cout << "Dese ingresar otro numero ";
-        cin >> r; 
-    } 
+        num = num/2;  
+    }
+    cout << "Numero binario: " << bin;
     cout << endl; 
     return 0; 
 }

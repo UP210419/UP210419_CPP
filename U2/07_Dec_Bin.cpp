@@ -1,8 +1,8 @@
 /*
-Unidad 2. 
+Unidad 2. Uso de ciclo While 
 Author: Andrea Sofia Orozco Morán 
 Fecha: 07/10/22
-Descripción: Muestra el uso de ciclo while  
+Descripción: Muestra el uso de la sentencia While  
 
 */
 

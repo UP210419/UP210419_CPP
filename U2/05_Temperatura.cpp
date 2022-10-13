@@ -1,7 +1,8 @@
 /*
-Unidad 2
+Unidad 2. Uso de ciclo Do While 
 Author: Andrea Sofia Orozco Morán 
 Fecha: 03/10/22
+Descripción: Muestra el uso de la sentencia Do While 
 */
 
 #include <iostream>
@@ -13,7 +14,7 @@ int main(){
     float temperatura;
     float AcumTemp=0;
     float promedio;   
-    float baja, alta;
+    float baja = -30, alta = 40;
 
     do{
         cout << "Dame la temperatura: ";

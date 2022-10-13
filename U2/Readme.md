@@ -122,7 +122,7 @@ int main(){
 
 **Explanation** 
 
-This program indicates the level of performance of each employee in a company, and the amount of money they will receive
+This program indicates the level of performance of each employee in a company, and the amount of money they will receive.
 
 ***Screenshots*** 
 
@@ -171,7 +171,7 @@ int main(){
 
 **Explanation** 
 
-This program indicates the ticket price to be paid by ages
+This program indicates the ticket price to be paid by ages.
 
 
 ***Screenshots*** 
@@ -266,7 +266,7 @@ int mainI(){
 
 **Explanation** 
 
-This program shows the order information per user in pizzeria Bella Napoli
+This program shows the order information per user in pizzeria Bella Napoli.
 
 ***Screenshots***
 
@@ -313,7 +313,7 @@ int mainI(){
 
 ***Output***
 ```c++
- cout << "El promedio de temperatura es: " << promedio;
+    cout << "El promedio de temperatura es: " << promedio;
     cout << "\nLa temperatura minima es: " << baja;
     cout << "\nLa temperatura maxima es: " << alta;
     cout << endl; 
@@ -342,13 +342,25 @@ int mainI(){
 ```
 
 ***Input***
+```c++
+    //Declaration of variables 
+    int cant; 
+    int precio; 
 
+    //Request quantity of products you buy
+    cout << "Cantidad de productos que vas a comprar: ";
+    cin >> cant;   
+    //Request product price 
+    cout << "Precio de producto: ";
+    cin >> precio;
+```
 
 ***Process***
 
 
 ***Explanation***
 
+This program registers a number of products purchased and the price of each of these of a user, and shows the total payment of the purchase.
 
 ***Screenshots***
 
@@ -369,13 +381,72 @@ int mainI(){
 
 ***Input***
 ```c++
+    //Declaration of variables
+    int num; 
+    string bin = ""; 
     
+    //Request a number 
+    cout << "Introduce un numero cualquiera ";
+    cin >> num;
+```
+
+***Process***
+```c++
+    while(num != 0){
+        if(num%2 == 0){
+            bin = "0" + bin;
+        }else{
+            bin = "1" + bin; 
+        }
+        num = num/2;  
+    }
+```
+
+***Output***
+```c++
+    cout << "Numero binario: " << bin;
+    cout << endl; 
+    return 0; 
+}
+```
+
+***Explanation***
+
+This program converts any decimal number of type integer to binary number. 
+
+***Screenshots***
+
+
+**Exercise 8: Write a program that displays the multiplication table of a number entered by the user.**
+
+***C++***
+```c++ 
+//Library for handling screen inputs and outputs 
+#include <iostream>
+
+//Using the namespace to avoid the std::
+using namespace std; 
+
+//Integer main function 
+int mainI(){
+``` 
+
+***Input***
+```c++ 
+    //Declaration of variables
+    int n;
+    int x = 1; 
+    int res;
+
+    //Requests the number of the multiplication table to be displayed
+    cout << "Introduce el numero de la tabla que deseas ver ";
+    cin >> n;
 ```
 
 ***Process***
 
+***Output***
 
 ***Explanation***
 
-
-***Screenshots***
+This program shows the multiplication table of any integer type number that is entered by the user.

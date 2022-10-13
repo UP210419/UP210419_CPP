@@ -1,8 +1,8 @@
 /*
-Unidad 2
+Unidad 2. Uso de ciclo Do While 
 Author: Andrea Sofia Orozco Morán 
 Fecha: 05/09/22
-Descripción: Uso de ciclo Do-While
+Descripción: Muestra el uso de la sentencia Do While
 */
 
 #include <iostream>
@@ -14,15 +14,15 @@ int main(){
     int precio; 
     int total; 
 
-    do{
+    do{  
         cout << "Cantidad de productos que vas a comprar: ";
-        cin >> cant;    
+        cin >> cant; 
+        if(cant != 0){
         cout << "Precio de producto: ";
         cin >> precio;
         
-        if(cant != 0){
-            total += precio*cant;
-        }     
+        total += precio*cant;   
+        }
 
     }while(cant != 0);
     cout << "factura: " << total;

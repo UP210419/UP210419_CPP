@@ -7,13 +7,9 @@ La pizzeria Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus
 clientes. Los ingredientes para cada tipo de pizza aparecen a continuación
 */
 
-//Libreria para manejo de entradas y salida de pantalla
 #include <iostream>
 
-//Uso de namespace para evitar el std::
 using namespace std;
-
-//Función principal de tipo entero 
 int main(){
 
     int pizza;

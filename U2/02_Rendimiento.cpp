@@ -9,13 +9,9 @@ al final de cada año
 
 //Este prograna indica el nivel de rendimiento de cada empleado en una empresa, y la cantidad de dinero que recibirá
 
-//Librería para manejo de entradas y salida de pantalla 
 #include <iostream>
 
-//Uso del namespace para evitar el std::
 using namespace std; 
-
-//Función principal de tipo entero 
 int main(){
 
     float puntuacion; 
@@ -24,7 +20,6 @@ int main(){
     float meritorio = 0.6;
     float ganancia; 
 
-    //Solicita puntuación del empleado
     cout << "Su puntuacion es: \n";
     cin >> puntuacion; 
     if(puntuacion == inaceptable){
@@ -43,6 +38,5 @@ int main(){
         cout << "\nTu nivel de rendimiento no es aceptable \n";
     }
     cout << endl;
-    //Al ser una función debe retornar un valor, en este caso 0
     return 0;
 }

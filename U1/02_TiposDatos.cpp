@@ -9,7 +9,7 @@ Descripción: Muestra los diferentes tipos de datos en c++
 //Librería para el uso de printf y scanf 
 #include <stdio.h>
 
-//Uso del namespace para evita el std::
+//Uso del namespace para evitar el std::
 using namespace std;
 
 //Función principal de tipo entero 

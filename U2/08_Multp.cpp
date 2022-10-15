@@ -18,10 +18,12 @@ int main(){
     cin >> n;
     do{
         res = n*x;
+
         cout << "|  " << x << "     x     " << n << "     =     " << res << "   |" << "\n";
         cout << "---------------------------------- \n";
         x++;
-    }while(x<=10);
+    }while(x <= 10);
 
+    cout << endl;
     return 0;
 }

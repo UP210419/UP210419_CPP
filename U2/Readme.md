@@ -58,7 +58,9 @@ int main(){
 ```c++
 //Print total payment with tax to pay 
 cout << "\nEl impuesto a pagar es de: $" << impuesto;
-cout << endl; 
+cout << endl;
+//Being a function, it must return a value, in this case 0
+return 0;  
 }
 ```
 
@@ -260,6 +262,7 @@ int mainI(){
         }
     }
     cout << endl;
+    //Being a function, it must return a value, in this case 0
     return 0;
 }
 ```
@@ -291,6 +294,7 @@ int mainI(){
     float temperatura;
     float AcumTemp=0;
     float promedio; 
+    float baja = -30, alta = 40;
 
     do{
         //Request the temperature 
@@ -317,6 +321,7 @@ int mainI(){
     cout << "\nLa temperatura minima es: " << baja;
     cout << "\nLa temperatura maxima es: " << alta;
     cout << endl; 
+    //Being a function, it must return a value, in this case 0
     return 0;
 }
 ```
@@ -338,25 +343,40 @@ int mainI(){
 using namespace std; 
 
 //Integer main function 
-int mainI(){
+int mainI(){ 
 ```
 
-***Input***
+***Input and Process***
 ```c++
     //Declaration of variables 
     int cant; 
-    int precio; 
+    int precio;
 
-    //Request quantity of products you buy
-    cout << "Cantidad de productos que vas a comprar: ";
-    cin >> cant;   
-    //Request product price 
-    cout << "Precio de producto: ";
-    cin >> precio;
+    do{  
+        //Request quantity of products you buy
+        cout << "Cantidad de productos que desea comprar: ";
+        cin >> cant; 
+
+        if(cant != 0){
+        //Request product price 
+        cout << "Precio de producto a comprar: ";
+        cin >> precio;
+        
+        total = total + precio * cant;   
+        }
+    }while(cant != 0);
 ```
 
-***Process***
-
+***Output***
+```c++
+    cout << "factura \n"; 
+    cout << "---------------- \n";
+    cout << "Pago total: $" << total;
+    cout << endl;
+    //Being a function, it must return a value, in this case 0
+    return 0;
+}
+```
 
 ***Explanation***
 
@@ -406,6 +426,7 @@ int mainI(){
 ```c++
     cout << "Numero binario: " << bin;
     cout << endl; 
+    //Being a function, it must return a value, in this case 0
     return 0; 
 }
 ```
@@ -443,10 +464,44 @@ int mainI(){
     cin >> n;
 ```
 
-***Process***
+***Process and Output***
+```c++
+    do{
+        res = n*x;
 
-***Output***
+        cout << "|  " << x << "     x     " << n << "     =     " << res << "   |" << "\n";
+        cout << "---------------------------------- \n";
+        x++;
+    }while(x <= 10);
+
+    cout << endl;
+    //Being a function, it must return a value, in this case 0 
+    return 0;
+}
+```
 
 ***Explanation***
 
 This program shows the multiplication table of any integer type number that is entered by the user.
+
+***Screenshots***
+
+
+**Exercise 9:**
+
+***C++***
+
+
+***Input***
+
+
+***Process***
+
+
+***Output***
+
+
+***Explanation***
+
+
+***Screenshots***

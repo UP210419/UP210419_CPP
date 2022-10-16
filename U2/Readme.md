@@ -21,35 +21,37 @@ int main(){
     float impuesto;
 
     //Request payment for annual rent
-    cout << "Cual es su renta anual \n";
+    cout << "Indique aqui la cantidad de renta anual: ";
     cin >> renta;
 ```
 
 ***Process***
 ```c++
+    cout << "Pago renta anual: $" << renta << "\n";
+
     //Use of income if less than $10,000
     if(renta < 10000){
-        cout << "Tu impuesto es de 5%"; //Tax of 5%
+        cout << "\nTu impuesto es de 5%"; //Tax of 5%
         impuesto = renta * .05; with tax of 5%
     }
     //Use of income if between $10,000 and $20,000
     if((renta >= 10000) && (renta <= 20000)){
-        cout << "Tu impuesto es de 15%"; //Tax of 15%
+        cout << "\nTu impuesto es de 15%"; //Tax of 15%
         impuesto = renta * .15; 
     }
     //Use of income if between $20,000 and $35,000
     if((renta >= 20000) && (renta <= 35000)){
-        cout << "Tu impuesto es de 20%"; //Tax of 20%
-        impuesto = renta * .2; 
+        cout << "\nTu impuesto es de 20%"; //Tax of 20%
+        impuesto = renta * .20; 
     }
     //Use of income if between $35,000 and $60,000
     if((renta >= 35000) && (renta <= 60000)){
-        cout << "Tu impuesto es de 30%"; //Tax of 30%
-        impuesto = renta * .3; 
+        cout << "\nTu impuesto es de 30%"; //Tax of 30%
+        impuesto = renta * .30; 
     }
     //Use of income if greater than $60,000
     if(renta > 60000){
-        cout << "Tu impuesto es de 60%"; //Tax of 60%
+        cout << "\nTu impuesto es de 45%"; //Tax of 60%
         impuesto = renta * .45; 
     }
 ```
@@ -57,15 +59,19 @@ int main(){
 ***Output***
 ```c++
 //Print total payment with tax to pay 
-cout << "\nEl impuesto a pagar es de: $" << impuesto;
+cout << "\nEl pago total es de: $" << impuesto;
 cout << endl;
 //Being a function, it must return a value, in this case 0
 return 0;  
 }
 ```
+***Explanation***
+
+This program calculates the total payment with annual income tax corresponding to its respective tax applied to each user.
 
 ***Screenshots***
 
+<img src="">
 
 ### **Exercise 2: Write a program that reads the user's score and indicates their level of performance, as well as the amount of money the user will receive.**
 
@@ -122,12 +128,13 @@ int main(){
 }
 ```
 
-**Explanation** 
+***Explanation*** 
 
 This program indicates the level of performance of each employee in a company, and the amount of money they will receive.
 
 ***Screenshots*** 
 
+<img src="">
 
 ### **Exercise 3: Write a program for a company that has game rooms for all ages and wants to automatically calculate the price to charge its customers to enter.**
 
@@ -178,6 +185,7 @@ This program indicates the ticket price to be paid by ages.
 
 ***Screenshots*** 
 
+<img src="">
 
 ### **Exercise 4: Write a program that asks the user if he wants vegetarian pizza or not, and based on his answer shows him the menu with the ingredients available for him to choose from. You can only choose one ingredient besides the mozzarella and tomato that are on all the pizzas.**
 
@@ -273,6 +281,8 @@ This program shows the order information per user in pizzeria Bella Napoli.
 
 ***Screenshots***
 
+<img src="">
+
 ### **Exercise 5: Make a program in which 6 temperatures are entered and determine the average, the lowest and the highest.**
 
 ***C++***
@@ -329,8 +339,11 @@ int mainI(){
 ***Explanation***
 
 
+This program calculates the average temperature of 6 different users and indicates the minimum and maximum temperatures of the data that was entered.
+
 ***Screenshots***
 
+<img src="">
 
 ### **Exercise 6: Make a program that reads indefinitely quantities of products and their price, and at the end indicates the total of the invoice. To know that the purchase has been completed, a 0 must be entered in the quantity.**
 
@@ -384,6 +397,7 @@ This program registers a number of products purchased and the price of each of t
 
 ***Screenshots***
 
+<img src="">
 
 ### **Exercise 7: Write a program that performs the conversion from binary to decimal, only for integers greater than 0. The result can be displayed as an integer variable or in a set of characters.**
 
@@ -437,6 +451,7 @@ This program converts any decimal number of type integer to binary number.
 
 ***Screenshots***
 
+<img src="">
 
 **Exercise 8: Write a program that displays the multiplication table of a number entered by the user.**
 
@@ -486,8 +501,9 @@ This program shows the multiplication table of any integer type number that is e
 
 ***Screenshots***
 
+<img src="">
 
-**Exercise 9:**
+**Exercise 9: Write a program that obtains the root of a predetermined equation, using the bisection method.**
 
 ***C++***
 
@@ -505,3 +521,5 @@ This program shows the multiplication table of any integer type number that is e
 
 
 ***Screenshots***
+
+<img src="">

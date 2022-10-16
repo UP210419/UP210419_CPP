@@ -27,8 +27,10 @@ int main(){
    int renta; 
    float impuesto;
 
-   cout << "Cual es su renta anual \n";
+   cout << "Indique aqui la cantidad de renta anual: ";
    cin >> renta;
+   
+   cout << "Pago renta anual: $" << renta << "\n";
 
    if(renta < 10000){
     cout << "Tu impuesto es de 5%";
@@ -40,17 +42,17 @@ int main(){
    }
    if((renta >= 20000) && (renta <= 35000)){
     cout << "Tu impuesto es de 20%";
-    impuesto = renta * .2;
+    impuesto = renta * .20;
    }
    if((renta >= 35000) && (renta <= 60000)){
     cout << "Tu impuesto es de 30%";
-    impuesto = renta * .3;
+    impuesto = renta * .30;
    }
    if(renta > 60000){
-    cout << "Tu impuesto es de 60%";
+    cout << "Tu impuesto es de 45%";
     impuesto = renta * .45;
    }
-   cout << "\nEl impuesto a pagar es de: $" << impuesto;
+   cout << "\nEl pago total es de: $" << impuesto;
    cout << endl; 
    return 0; 
 }

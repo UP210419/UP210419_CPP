@@ -145,14 +145,23 @@ This program indicates the level of performance of each employee in a company, a
 ***Screenshots*** 
 
 Puntuación de empleado de 0
+
 <img src="./Screens/rend0.jpeg">
+
 Puntuación de empleado de 0.2
+
 <img src="./Screens/rend.2.jpeg">
+
 Puntuación de empleado de 0.4
+
 <img src="./Screens/rend.4.jpeg">
+
 Puntuación de empleado de 0.6
+
 <img src="./Screens/rend.6.jpeg">
+
 Puntuación de empleado de 2.8
+
 <img src="./Screens/rend2.8.jpeg">
 
 ### **Exercise 3: Write a program for a company that has game rooms for all ages and wants to automatically calculate the price to charge its customers to enter.**
@@ -205,12 +214,19 @@ This program indicates the ticket price to be paid by ages.
 ***Screenshots*** 
 
 Edad menor a 4 años 
+
 <img src="./Screens/edad-4.jpeg">
+
 Edad entre 4 años y 18 años  
+
 <img src="./Screens/edad+4.jpeg">
+
 Edad entre 4 años y 18 años 
+
 <img src="./Screens/edad-18.jpeg">
+
 Edad mayor a 18 años 
+
 <img src="./Screens/edad+18.jpeg">
 
 ### **Exercise 4: Write a program that asks the user if he wants vegetarian pizza or not, and based on his answer shows him the menu with the ingredients available for him to choose from. You can only choose one ingredient besides the mozzarella and tomato that are on all the pizzas.**
@@ -308,8 +324,11 @@ This program shows the order information per user in pizzeria Bella Napoli.
 ***Screenshots***
 
 Pizza Vegetariana
+
 <img src="./Screens/pizzaV.jpeg">
+
 Pizza No Vegetariana
+
 <img src="./Screens/pizzaNV.jpeg">
 
 ### **Exercise 5: Make a program in which 6 temperatures are entered and determine the average, the lowest and the highest.**
@@ -373,6 +392,7 @@ This program calculates the average temperature of 6 different users and indicat
 ***Screenshots***
 
 Temperatura promedio, minima y maxima 
+
 <img src="./Screens/temp.jpeg">
 
 ### **Exercise 6: Make a program that reads indefinitely quantities of products and their price, and at the end indicates the total of the invoice. To know that the purchase has been completed, a 0 must be entered in the quantity.**
@@ -428,6 +448,7 @@ This program registers a number of products purchased and the price of each of t
 ***Screenshots***
 
 Factura de pago total de una compra de varios productos
+
 <img src="./Screens/fact.jpeg">
 
 ### **Exercise 7: Write a program that performs the conversion from binary to decimal, only for integers greater than 0. The result can be displayed as an integer variable or in a set of characters.**

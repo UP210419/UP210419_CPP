@@ -25,7 +25,7 @@ int main(){
         total = total + precio * cant;   
         }
     }while(cant != 0);
-    cout << "factura \n"; 
+    cout << "\nFACTURA \n"; 
     cout << "---------------- \n";
     cout << "Pago total: $" << total;
     cout << endl;

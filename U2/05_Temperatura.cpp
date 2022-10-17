@@ -33,9 +33,9 @@ int main(){
         contador ++;
     }while(contador <= 6);
     
-    cout << "El promedio de temperatura es: " << promedio;
-    cout << "\nLa temperatura minima es: " << baja;
-    cout << "\nLa temperatura maxima es: " << alta;
+    cout << "\nEl promedio de temperatura es: " << promedio;
+    cout << "\nLa temperatura minima es de: " << baja;
+    cout << "\nLa temperatura maxima es de: " << alta;
     cout << endl; 
     return 0;
 }

@@ -20,22 +20,24 @@ int main(){
     float meritorio = 0.6;
     float ganancia; 
 
-    cout << "Su puntuacion es: \n";
+    cout << "Su puntuacion es de: \n";
     cin >> puntuacion; 
+
     if(puntuacion == inaceptable){
-        cout << "\nTu nivel de rendimiento es inaceptable";
+        cout << "Tu nivel de rendimiento es inaceptable \n";
         ganancia = inaceptable * 2400;
-        cout << "\n\nTu ganancia es de: \n$" << ganancia; 
+        cout << "Tu ganancia es de: \n$" << ganancia; 
     }else if(puntuacion == aceptable){
-        cout << "\nTu nivel de rendimiento es aceptable"; 
+        cout << "Tu nivel de rendimiento es aceptable \n"; 
         ganancia = aceptable * 2400;
-        cout << "\n\nTu ganancia es de: \n$" << ganancia; 
+        cout << "Tu ganancia es de: \n$" << ganancia; 
     }else if(puntuacion >= meritorio){
-        cout << "\nTu nivel de rendimiento es meritorio";
+        cout << "Tu nivel de rendimiento es meritorio \n";
         ganancia = meritorio * 2400;
-        cout << "\n\nTu ganancia es de: \n$" << ganancia; 
+        cout << "Tu ganancia es de: \n$" << ganancia; 
     }else{
-        cout << "\nTu nivel de rendimiento no es aceptable \n";
+        cout << "Tu nivel de rendimiento es insuficiente \n";
+        cout << "No hay ninguna ganancia";
     }
     cout << endl;
     return 0;

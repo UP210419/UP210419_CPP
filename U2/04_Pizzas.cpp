@@ -15,57 +15,58 @@ int main(){
     int pizza;
     int ingrediente;
 
-    cout << "Indique aqui la pizza que desea ordenar \n";
+    cout << "     BELLA NAPOLI \n";
     cout << "1. Vegetariana \n";
     cout << "2. No vegetariana \n";
+    cout << "\nIndique la pizza que desea ordenar \n";
     cin >> pizza;
     
     if(pizza == 1){
-        cout << "\nMENU VEGETARIANO \n"; 
+        cout << "\n     MENU VEGETARIANO \n"; 
         cout << "1. Pimiento \n";
         cout << "2. Tofu \n";
 
-        cout << "\nEliga el ingrediente extra que desea agregar \n";
+        cout << "\nIngredientes extra: \n";
         cin >> ingrediente; 
         if(ingrediente == 1){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Pimiento";
+            cout << "  Pimiento";
         }else if(ingrediente == 2){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Tofu";
+            cout << "  Tofu";
         }
     }else if(pizza == 2){
-        cout << "\nMENU NO VEGETARIANO\n";
-        cout << "1. Peperoni\n";
-        cout << "2. Jamon\n";
-        cout << "3. Salmon";
+        cout << "\n     MENU NO VEGETARIANO \n";
+        cout << "1. Peperoni \n";
+        cout << "2. Jamon \n";
+        cout << "3. Salmon \n";
 
-        cout << "\nEliga sus ingredientes\n";
+        cout << "\nIngredientes extra: \n";
         cin >> ingrediente; 
         if(ingrediente == 1){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza no vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Peperoni";
+            cout << "  Peperoni";
         }else if(ingrediente == 2){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza no vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Jamon";
+            cout << "  Jamon";
         }else if(ingrediente == 3){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza no vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Salmon";
+            cout << "  Salmon";
         }
     }
     cout << endl;

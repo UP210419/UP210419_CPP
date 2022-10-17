@@ -19,9 +19,9 @@ int main(){
 
     
     if(edad < 4){
-        cout << "\nSu entrada es gratis"; 
+        cout << "Su entrada es gratis"; 
     }else if((edad >= 4) && (edad <= 18)){
-        cout << "\nDebe pagar $5"; 
+        cout << "Debe pagar $5"; 
     }else if(edad > 18){
         cout << "Debe pagar $10"; 
     }

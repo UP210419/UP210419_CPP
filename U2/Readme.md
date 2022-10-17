@@ -71,7 +71,16 @@ This program calculates the total payment with annual income tax corresponding t
 
 ***Screenshots***
 
-<img src="">
+Renta de 5%
+<img src="./Screens/renta.5.jpeg">
+Renta de 15%
+<img src="./Screens/renta.15.jpeg">
+Renta de 20%
+<img src="./Screens/renta.20.jpeg">
+Renta de 30%
+<img src="./Screens/renta.30.jpeg">
+Renta de 45%
+<img src="./Screens/renta.45.jpeg">
 
 ### **Exercise 2: Write a program that reads the user's score and indicates their level of performance, as well as the amount of money the user will receive.**
 
@@ -105,22 +114,23 @@ int main(){
 ```c++
     //Use if 
     if(puntuacion == inaceptable){
-        cout << "\nTu nivel de rendimiento es inaceptable";
+        cout << "Tu nivel de rendimiento es inaceptable \n";
         ganancia = inaceptable * 2400;
-        cout << "\n\nTu ganancia es de: \n$" << ganancia; //OUTPUT
+        cout << "Tu ganancia es de: \n$" << ganancia; //OUTPUT
     }
     else if(puntuacion == aceptable){
-        cout << "\nTu nivel de rendimiento es aceptable"; 
+        cout << "Tu nivel de rendimiento es aceptable \n"; 
         ganancia = aceptable * 2400;
-        cout << "\n\nTu ganancia es de: \n$" << ganancia; //OUTPUT
+        cout << "Tu ganancia es de: \n$" << ganancia; //OUTPUT
     }
     else if(puntuacion >= meritorio){
-        cout << "\nTu nivel de rendimiento es meritorio";
+        cout << "Tu nivel de rendimiento es meritorio \n";
         ganancia = meritorio * 2400;
-        cout << "\n\nTu ganancia es de: \n$" << ganancia; //OUTPUT
+        cout << "Tu ganancia es de: \n$" << ganancia; //OUTPUT
     }
     else{
-        cout << "\nTu nivel de rendimiento no es aceptable \n";
+        cout << "Tu nivel de rendimiento es insuficiente \n"; //OUTPUT
+        cout << "No hay ninguna ganancia"; //OUTPUT
     }
     cout << endl;
     //Being a function, it must return a value, in this case 0
@@ -134,7 +144,16 @@ This program indicates the level of performance of each employee in a company, a
 
 ***Screenshots*** 
 
-<img src="">
+Puntuación de empleado de 0
+<img src="./Screens/rend0.jpeg">
+Puntuación de empleado de 0.2
+<img src="./Screens/rend.2.jpeg">
+Puntuación de empleado de 0.4
+<img src="./Screens/rend.4.jpeg">
+Puntuación de empleado de 0.6
+<img src="./Screens/rend.6.jpeg">
+Puntuación de empleado de 2.8
+<img src="./Screens/rend2.8.jpeg">
 
 ### **Exercise 3: Write a program for a company that has game rooms for all ages and wants to automatically calculate the price to charge its customers to enter.**
 
@@ -164,10 +183,10 @@ int main(){
 ```c++
     //Use if 
     if(edad < 4){
-        cout << "\nSu entrada es gratis"; //OUTPUT
+        cout << "Su entrada es gratis"; //OUTPUT
     }
     else if((edad >= 4) && (edad <= 18)){
-        cout << "\nDebe pagar $5"; //OUTPUT
+        cout << "Debe pagar $5"; //OUTPUT
     }
     else if(edad > 18){
         cout << "Debe pagar $10"; //OUTPUT
@@ -185,7 +204,14 @@ This program indicates the ticket price to be paid by ages.
 
 ***Screenshots*** 
 
-<img src="">
+Edad menor a 4 años 
+<img src="./Screens/edad-4.jpeg">
+Edad entre 4 años y 18 años  
+<img src="./Screens/edad+4.jpeg">
+Edad entre 4 años y 18 años 
+<img src="./Screens/edad-18.jpeg">
+Edad mayor a 18 años 
+<img src="./Screens/edad+18.jpeg">
 
 ### **Exercise 4: Write a program that asks the user if he wants vegetarian pizza or not, and based on his answer shows him the menu with the ingredients available for him to choose from. You can only choose one ingredient besides the mozzarella and tomato that are on all the pizzas.**
 
@@ -208,65 +234,65 @@ int mainI(){
     int ingrediente;
 
     //Request pizza of your choice
-    cout << "Indique aqui la pizza que desea ordenar \n";
+    cout << "     BELLA NAPOLI \n";
     cout << "1. Vegetariana \n";
     cout << "2. No vegetariana \n";
+    cout << "\nIndique la pizza que desea ordenar \n";
     cin >> pizza;
 ```
 
 ***Process and Output***
 ```c++
     if(pizza == 1){
-        cout << "\nMENU VEGETARIANO \n"; 
+        cout << "\n     MENU VEGETARIANO \n"; 
         cout << "1. Pimiento \n";
         cout << "2. Tofu \n";
 
-        cout << "\nEliga el ingrediente extra que desea agregar \n";
+        cout << "\nIngredientes extra: \n";
         cin >> ingrediente; 
-
         if(ingrediente == 1){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Pimiento";
+            cout << "  Pimiento";
         }
         else if(ingrediente == 2){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Tofu";
+            cout << "  Tofu";
         }
     }else if(pizza == 2){
-        cout << "\nMENU NO VEGETARIANO\n";
-        cout << "1. Peperoni\n";
-        cout << "2. Jamon\n";
-        cout << "3. Salmon";
+        cout << "\n     MENU NO VEGETARIANO \n";
+        cout << "1. Peperoni \n";
+        cout << "2. Jamon \n";
+        cout << "3. Salmon \n";
 
-        cout << "\nEliga sus ingredientes\n";
+        cout << "\nIngredientes extra: \n";
         cin >> ingrediente; 
 
         if(ingrediente == 1){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza no vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Peperoni";
+            cout << "  Peperoni";
         }
         else if(ingrediente == 2){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza no vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Jamon";
+            cout << "  Jamon";
         }
         else if(ingrediente == 3){
-            cout << "\nPedido \n"; 
-            cout << "Pizza vegetariana \n";
-            cout << "Mozzarella y tomate \n";
+            cout << "\n     PEDIDO \n"; 
+            cout << "Pizza: \n" << "  Pizza no vegetariana \n";
+            cout << "Ingredientes: \n" << "  Mozzarella y tomate \n";
             cout << "Ingrediente extra: \n";
-            cout << "Salmon";
+            cout << "  Salmon";
         }
     }
     cout << endl;
@@ -281,7 +307,10 @@ This program shows the order information per user in pizzeria Bella Napoli.
 
 ***Screenshots***
 
-<img src="">
+Pizza Vegetariana
+<img src="./Screens/pizzaV.jpeg">
+Pizza No Vegetariana
+<img src="./Screens/pizzaNV.jpeg">
 
 ### **Exercise 5: Make a program in which 6 temperatures are entered and determine the average, the lowest and the highest.**
 
@@ -327,9 +356,9 @@ int mainI(){
 
 ***Output***
 ```c++
-    cout << "El promedio de temperatura es: " << promedio;
-    cout << "\nLa temperatura minima es: " << baja;
-    cout << "\nLa temperatura maxima es: " << alta;
+    cout << "\nEl promedio de temperatura es: " << promedio;
+    cout << "\nLa temperatura minima es de: " << baja;
+    cout << "\nLa temperatura maxima es de: " << alta;
     cout << endl; 
     //Being a function, it must return a value, in this case 0
     return 0;
@@ -343,7 +372,8 @@ This program calculates the average temperature of 6 different users and indicat
 
 ***Screenshots***
 
-<img src="">
+Temperatura promedio, minima y maxima 
+<img src="./Screens/temp.jpeg">
 
 ### **Exercise 6: Make a program that reads indefinitely quantities of products and their price, and at the end indicates the total of the invoice. To know that the purchase has been completed, a 0 must be entered in the quantity.**
 
@@ -382,7 +412,7 @@ int mainI(){
 
 ***Output***
 ```c++
-    cout << "factura \n"; 
+    cout << "\nFACTURA \n"; 
     cout << "---------------- \n";
     cout << "Pago total: $" << total;
     cout << endl;
@@ -397,7 +427,8 @@ This program registers a number of products purchased and the price of each of t
 
 ***Screenshots***
 
-<img src="">
+Factura de pago total de una compra de varios productos
+<img src="./Screens/fact.jpeg">
 
 ### **Exercise 7: Write a program that performs the conversion from binary to decimal, only for integers greater than 0. The result can be displayed as an integer variable or in a set of characters.**
 
@@ -451,7 +482,6 @@ This program converts any decimal number of type integer to binary number.
 
 ***Screenshots***
 
-<img src="">
 
 **Exercise 8: Write a program that displays the multiplication table of a number entered by the user.**
 

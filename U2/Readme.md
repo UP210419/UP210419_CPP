@@ -71,15 +71,24 @@ This program calculates the total payment with annual income tax corresponding t
 
 ***Screenshots***
 
-Renta de 5%
+**Renta de 5%**
+
 <img src="./Screens/renta.5.jpeg">
-Renta de 15%
+
+**Renta de 15%**
+
 <img src="./Screens/renta.15.jpeg">
-Renta de 20%
+
+**Renta de 20%**
+
 <img src="./Screens/renta.20.jpeg">
-Renta de 30%
+
+**Renta de 30%**
+
 <img src="./Screens/renta.30.jpeg">
-Renta de 45%
+
+**Renta de 45%**
+
 <img src="./Screens/renta.45.jpeg">
 
 ### **Exercise 2: Write a program that reads the user's score and indicates their level of performance, as well as the amount of money the user will receive.**
@@ -148,19 +157,19 @@ This program indicates the level of performance of each employee in a company, a
 
 <div><img src="./Screens/rend0.jpeg"></div>
 
-Puntuación de empleado de 0.2
+**Puntuación de empleado de 0.2**
 
 <img src="./Screens/rend.2.jpeg">
 
-Puntuación de empleado de 0.4
+**Puntuación de empleado de 0.4**
 
 <img src="./Screens/rend.4.jpeg">
 
-Puntuación de empleado de 0.6
+**Puntuación de empleado de 0.6**
 
 <img src="./Screens/rend.6.jpeg">
 
-Puntuación de empleado de 2.8
+**Puntuación de empleado de 2.8**
 
 <img src="./Screens/rend2.8.jpeg">
 
@@ -213,19 +222,19 @@ This program indicates the ticket price to be paid by ages.
 
 ***Screenshots*** 
 
-Edad menor a 4 años 
+**Edad menor a 4 años**
 
 <img src="./Screens/edad-4.jpeg">
 
-Edad entre 4 años y 18 años  
+**Edad entre 4 años y 18 años**  
 
 <img src="./Screens/edad+4.jpeg">
 
-Edad entre 4 años y 18 años 
+**Edad entre 4 años y 18 años** 
 
 <img src="./Screens/edad-18.jpeg">
 
-Edad mayor a 18 años 
+**Edad mayor a 18 años**
 
 <img src="./Screens/edad+18.jpeg">
 
@@ -323,11 +332,11 @@ This program shows the order information per user in pizzeria Bella Napoli.
 
 ***Screenshots***
 
-Pizza Vegetariana
+**Pizza Vegetariana**
 
 <img src="./Screens/pizzaV.jpeg">
 
-Pizza No Vegetariana
+**Pizza No Vegetariana**
 
 <img src="./Screens/pizzaNV.jpeg">
 
@@ -386,12 +395,11 @@ int mainI(){
 
 ***Explanation***
 
-
 This program calculates the average temperature of 6 different users and indicates the minimum and maximum temperatures of the data that was entered.
 
 ***Screenshots***
 
-Temperatura promedio, minima y maxima 
+**Temperatura promedio, mínima y máxima**
 
 <img src="./Screens/temp.jpeg">
 
@@ -447,7 +455,7 @@ This program registers a number of products purchased and the price of each of t
 
 ***Screenshots***
 
-Factura de pago total de una compra de varios productos
+**Factura de pago total de una compra de varios productos**
 
 <img src="./Screens/fact.jpeg">
 

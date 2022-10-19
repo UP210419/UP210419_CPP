@@ -144,9 +144,9 @@ This program indicates the level of performance of each employee in a company, a
 
 ***Screenshots*** 
 
-Puntuación de empleado de 0
+**Puntuación de empleado de 0**
 
-<img src="./Screens/rend0.jpeg">
+<div><img src="./Screens/rend0.jpeg"></div>
 
 Puntuación de empleado de 0.2
 

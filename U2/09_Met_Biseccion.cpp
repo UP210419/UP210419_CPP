@@ -7,48 +7,113 @@ Resolver una ecuación por el método de bisección
 */
 
 #include <iostream>
+#include <stdio.h>
 #include <cmath>
+#include <iomanip>
+//#include <windows.h>
 
 using namespace std; 
 
-float resuelveEcuacion(float valor){
-    //Con la ecuación x^2 - x + 12
-    return (pow(valor, 2) - valor + 12);
-}
+double resuelveEcuacion(double);
+void imprimeLinea(void);
 
 int main(){
 
+    system("cls");
     int iterador = 1; 
-    float a;
-    float b;
-    float c;
-    float ya, yb, yc; 
+    double a, b, c, fa, fb, fc, root; 
+    double aprox = 0.0001;
+    bool hasRoot = false;
 
     cout << "Ingrese un numero negativo: ";
     cin >> a; 
     cout << "Ingrese un numero positivo: ";
     cin >> b; 
 
-    //cout << "|  " << "a" << "b" << "c" << "ya" << "yb" << "yc" << "  |";
+    cout << "\n";
+    imprimeLinea();
+    cout << "|";
+    cout << "%15s" << "Iteracion";
+    cout << "%7s" << "|";
+    cout << "%10s" << "a";
+    cout << "%9s" << "|";
+    cout << "%10s" << "b";
+    cout << "%9s" << "|";
+    cout << "%10s" << "c";
+    cout << "%9s" << "|";
+    cout << "%13s" << "f(a)";
+    cout << "%9s" << "|";
+    cout << "%13s" << "f(c)";
+    cout << "%9s" << "|";
+    cout << "%18s" << "f(a)f(c)";
+    cout << "%9s" << "|";
+    cout << "\n";
+    imprimeLinea();
 
-    c = (a+b)/2;
-    ya = resuelveEcuacion(a);
-    yb = resuelveEcuacion(b);
-    yc = resuelveEcuacion(c);
-    cout << "c =" << c; 
-    cout << "ya =" << yb;
-    cout << endl;
+    fb = resuelveEcuacion(b);
 
     do{
-        if(ya*yc < 0){
+        c = (a + b) / 2;
+        fa = resuelveEcuacion(a);
+        fc = resuelveEcuacion(c);
+
+        if(fa * fb > 0)break;
+
+        cout << "|";
+        cout << "%15d" << iterador;
+        cout << "%7s" << "|";
+        cout << "%10f" << a;
+        cout << "%9s" << "|";
+        cout << "%10f" << b;
+        cout << "%9s" << "|";
+        cout << "\033[0;32m";
+        cout << "%10f" << c;
+        cout << "\033[0m";
+        cout << "%9s" << "|";
+        cout << "%13f" << fa;
+        cout << "%9s" << "|";
+        cout << "%13f" << c;
+        cout << "%9s" << "|";
+        cout << "%18f" << fa * fc;
+        cout << "%9s" << "|";
+        cout << "\n";
+        imprimeLinea();
+
+        if( abs( fa * fc ) < aprox ){
+            hasRoot = true;
+            root = c;
+        }else if( fa * fc < 0){
             b = c;
-        }else if(yc*yb < 0){
-            a = c; 
         }else{
-            cout << "No existe";
+            a = c;
         }
-        break;
-    }while(yc >= 0.01 || yc <= 0.01);
+        iterador++;
+
+    }while( abs( fa * fc ) >= aprox);
+
+    if( hasRoot ){
+        cout << "\033[0;32m";
+        cout << "Raiz aproximada en %.3f" << root;
+        cout << "\033[0m";
+    }else{
+        cout << "En este rango no hay raiz";
+    }
         cout << endl;
         return 0;
+}
+
+double resuelveEcuacion(double valor){
+    //Con la ecuación x^2 - x - 12
+    return (pow(valor, 2) - valor - 12);
+}
+
+void imprimeLinea(){
+    for (int i = 1; i <= 151; i++){
+        if(i == 1 || i == 151){
+            cout << "valor";
+        }else{
+            cout << "-";
+        }
+    }
+    cout << "\n";
 }

@@ -71,23 +71,23 @@ This program calculates the total payment with annual income tax corresponding t
 
 ***Screenshots***
 
-**Renta de 5%**
+**5% rent**
 
 <img src="./Screens/renta.5.jpeg">
 
-**Renta de 15%**
+**15% rent**
 
 <img src="./Screens/renta.15.jpeg">
 
-**Renta de 20%**
+**20% rent**
 
 <img src="./Screens/renta.20.jpeg">
 
-**Renta de 30%**
+**30% rent**
 
 <img src="./Screens/renta.30.jpeg">
 
-**Renta de 45%**
+**45% rent**
 
 <img src="./Screens/renta.45.jpeg">
 
@@ -157,19 +157,19 @@ This program indicates the level of performance of each employee in a company, a
 
 <div><img src="./Screens/rend0.jpeg"></div>
 
-**Puntuación de empleado de 0.2**
+**Employee score of 0.2**
 
 <img src="./Screens/rend.2.jpeg">
 
-**Puntuación de empleado de 0.4**
+**Employee score of 0.4**
 
 <img src="./Screens/rend.4.jpeg">
 
-**Puntuación de empleado de 0.6**
+**Employee score of 0.6**
 
 <img src="./Screens/rend.6.jpeg">
 
-**Puntuación de empleado de 2.8**
+**Employee score of 2.8**
 
 <img src="./Screens/rend2.8.jpeg">
 
@@ -222,19 +222,19 @@ This program indicates the ticket price to be paid by ages.
 
 ***Screenshots*** 
 
-**Edad menor a 4 años**
+**Age less than 4 years**
 
 <img src="./Screens/edad-4.jpeg">
 
-**Edad entre 4 años y 18 años**  
+**Age between 4 and 18 years**  
 
 <img src="./Screens/edad+4.jpeg">
 
-**Edad entre 4 años y 18 años** 
+**Age between 4 and 18 years** 
 
 <img src="./Screens/edad-18.jpeg">
 
-**Edad mayor a 18 años**
+**Age over 18 years**
 
 <img src="./Screens/edad+18.jpeg">
 
@@ -332,11 +332,11 @@ This program shows the order information per user in pizzeria Bella Napoli.
 
 ***Screenshots***
 
-**Pizza Vegetariana**
+**Vegetarian Pizza**
 
 <img src="./Screens/pizzaV.jpeg">
 
-**Pizza No Vegetariana**
+**Non Vegetarian Pizza**
 
 <img src="./Screens/pizzaNV.jpeg">
 
@@ -399,7 +399,7 @@ This program calculates the average temperature of 6 different users and indicat
 
 ***Screenshots***
 
-**Temperatura promedio, mínima y máxima**
+**Average, minimum and maximum temperature**
 
 <img src="./Screens/temp.jpeg">
 
@@ -455,7 +455,7 @@ This program registers a number of products purchased and the price of each of t
 
 ***Screenshots***
 
-**Factura de pago total de una compra de varios productos**
+**Invoice for total payment of a purchase of several products**
 
 <img src="./Screens/fact.jpeg">
 
@@ -511,8 +511,11 @@ This program converts any decimal number of type integer to binary number.
 
 ***Screenshots***
 
+**Converting a decimal number to a binary number**
 
-**Exercise 8: Write a program that displays the multiplication table of a number entered by the user.**
+<img src="./Screens/binario.jpeg">
+
+### **Exercise 8: Write a program that displays the multiplication table of a number entered by the user.**
 
 ***C++***
 ```c++ 
@@ -546,9 +549,9 @@ int mainI(){
         cout << "|  " << x << "     x     " << n << "     =     " << res << "   |" << "\n";
         cout << "---------------------------------- \n";
         x++;
+        cout << endl;
     }while(x <= 10);
 
-    cout << endl;
     //Being a function, it must return a value, in this case 0 
     return 0;
 }
@@ -560,9 +563,11 @@ This program shows the multiplication table of any integer type number that is e
 
 ***Screenshots***
 
-<img src="">
+**Multiplication table of a number entered by the user**
 
-**Exercise 9: Write a program that obtains the root of a predetermined equation, using the bisection method.**
+<img src="./Screens/tablas_multp.jpeg">
+
+### **Exercise 9: Write a program that obtains the root of a predetermined equation, using the bisection method.**
 
 ***C++***
 
@@ -578,6 +583,7 @@ This program shows the multiplication table of any integer type number that is e
 
 ***Explanation***
 
+This program 
 
 ***Screenshots***
 

@@ -14,7 +14,7 @@ int main(){
     int x = 1; 
     int res;
 
-    cout << "Introduce el numero de la tabla que deseas ver ";
+    cout << "Introduce el numero de la tabla que deseas ver: ";
     cin >> n;
     do{
         res = n*x;
@@ -22,8 +22,9 @@ int main(){
         cout << "|  " << x << "     x     " << n << "     =     " << res << "   |" << "\n";
         cout << "--------------------------------- \n";
         x++;
+        cout << endl;
     }while(x <= 10);
 
-    cout << endl;
+    
     return 0;
 }

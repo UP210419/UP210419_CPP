@@ -13,10 +13,10 @@ using namespace std;
 int main(){
 
     int num; 
-    string bin = ""; 
+    string bin = "";
     
     cout << "Introduce un numero cualquiera ";
-    cin >> num; 
+    cin >> num;
 
     while(num != 0){
         if(num%2 == 0){
@@ -26,7 +26,7 @@ int main(){
         }
         num = num/2;  
     }
-    cout << "Numero binario: " << bin;
-    cout << endl; 
+    cout << "Numero binario: " << bin << "\n";
+    cout << endl;
     return 0; 
 }

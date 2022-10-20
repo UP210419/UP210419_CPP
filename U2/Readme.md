@@ -153,7 +153,7 @@ This program indicates the level of performance of each employee in a company, a
 
 ***Screenshots*** 
 
-**Puntuación de empleado de 0**
+**Employee score of 0**
 
 <div><img src="./Screens/rend0.jpeg"></div>
 

@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 using namespace std; 
 
 //FUNCTION PROTOTYPE
@@ -7,16 +8,24 @@ void colocarJugada(int);
 int seleccionarJugada();
 bool comprobarCasillaOcupada(int);
 void crearTablero();
+//void pedirJugada();
+//void revisarJugada();
+//void revisarGanador();
+int obtenerJugada(); //jugada tablero real 
+int obtenerMejorJugada(); //jugada tablero imaginario 
 
 //GLOBAL VARIABLE
 char estGato[6][11];
 int turnoJugador = 1; 
-char areaJuego[3][3] ={ {'x', '2', 'x'},
+char areaJuego[3][3] = {{'1', '2', '3'},
                        {'4', 'o', '6'},
-                       {'x', '8', '9'}};
+                       {'7', '8', '9'}};
 int jugada;
-
-
+int ganador;
+const string PC = "Maquina"; //ya no le puedes asignar otro valor 
+const string HUMANO = "Humano";
+const string TABLERO = "Real";
+const string TABLERO = "Imaginario";
 
 int main(){
     
@@ -30,14 +39,31 @@ int main(){
     {
         casillaOcupada = comprobarCasillaOcupada(i);
     if (casillaOcupada == true)
-        cout << "ocupadp";
+        cout << "ocupado";
     else   
         cout << "libre";
 
     cout << endl;
     }
-    
-    
+
+/*
+    while(turno < 9 && ganador = false){
+        if(turno%2 == 0){
+            jugada = pedirJugada();
+        }else{
+            jugada = obtenerJugadaPC();
+        }
+
+        jugadaOK = revisarJugada(jugada);
+        if (jugadaOK == true){
+            colocarJugada();
+            ganador = revisarGanador();
+        }
+        if (ganador == true){
+            cout << "Mensaje al ganador";
+        }
+    }
+*/
 
 /*
     do{
@@ -65,6 +91,7 @@ void colocarJugada(int jugada){
     if(jugada == 1){
         areaJuego[0][0] = valorJugada;
     }
+    cout << valorJugada << endl; 
 }
 
 int seleccionarJugada(){
@@ -117,18 +144,76 @@ bool comprobarCasillaOcupada(int jugada){
 
 void crearTablero()
 {
-    for (int row = 0; row < 6; row++)
+    int y, x;
+    for (int row = 0; row < 9; row++)
     {
         for (int col = 0; col < 11; col++)
         {
-            if (row % 2 == 0 && col != 3 && col != 7)
+            if (row = 0 || row = 3 || row = 6 || row = 8)
             {
-                cout << "-";
+                cout << "   |   |   " << endl;
             }
-            else if (row % 2 == 0 && col != 3 || col != 7)
+            else if (row = 1 &|| row = 4 || row = 7)
             {
-                cout << "|";
+                if(x = 1){
+                    cout << " " << areaJuego[x-1][y] << "   |   " << areaJuego[x-1][y] << "   |   " << areaJuego[x-1][y] << "   ";
+                }
+                if(x = 4){
+                    cout << " " << areaJuego[x-3][y] << "   |   " << areaJuego[x-3][y] << "   |   " << areaJuego[x-3][y] << "   "
+                }
+                if(x = 7){
+                    cout << " " << areaJuego[x-4][y] << "   |   " << areaJuego[x-4][y] << "   |   " << areaJuego[x-4][y] << "   "
+                }
+                y++; 
+            }else if(row = 2   row = 5){
+                cout<< "   |   |   ";
             }
         }
     }
 }
+/*
+int obtenerJugada(){
+    srand();
+    //Revisar que la PC gana 
+    jugada = obtenerMejorJugada(PC);
+    if (jugada != -1){
+        return jugada;
+    }
+    
+    jugada = obtenerMejorJugada(HUMANO);
+    if(jugada != -1){
+        return jugada; 
+    }
+
+    //return 1 + srand()%9; //random entre 1 y 9
+}
+*/
+//Jugada de TABLERO IMAGINARIO
+/*
+void colocarJugadaImaginaria(int jugada){
+    char valorJugada; 
+
+    if(turnoJugador%2==0){ //Parees
+        valorJugada = 'x';
+    }else{
+        valorJugada = 'o';
+    }
+    if(jugada == 1){
+        areaJuego[0][0] = valorJugada;
+    }
+    //cout << valorJugada << endl; 
+}
+*/ 
+
+/*
+//var esGanador; 
+if(areaJuego[0][0] != ' ' & areaJuego[0][1] == areaJuego[0][0] & areaJuego[0][2] == areaJuego[0][0]
+    || areaJuego[1][0] != ' ' & areaJuego[1][1] == areaJuego[1][0] & areaJuego[1][2] == areaJuego[1][0]
+        || areaJuego[2][0] != ' ' & areaJuego[2][1] == areaJuego[2][0] & areaJuego[2][2] == areaJuego[2][0]
+        
+            || areaJuego[0][0] != ' ' & areaJuego[1][0] == areaJuego[0][0] & areaJuego[2][0] == areaJuego[0][0]
+                || areaJuego[1][0] != ' ' & areaJuego[1][1] == areaJuego[0][1] & areaJuego[2][1] == areaJuego[0][1]
+                    || areaJuego[2][0] != ' ' & areaJuego[2][1] == areaJuego[2][0] & areaJuego[2][2] == areaJuego[2][0]){
+    esGanador = true; 
+}
+*/

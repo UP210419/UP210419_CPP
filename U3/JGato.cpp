@@ -8,11 +8,11 @@ void setMove(int); //colocarJugada
 int selectMove(); //seleccionarJugada
 bool checkBusySlot(int); //
 void createBoard(); //crearTablero
-//void pedirJugada();
-//void revisarJugada();
-//void revisarGanador();
+//void requestMove(); //pedirJugada
+//void reviewPlay(); //revisarJugada
+//void reviewWinner(); revisarGanador
 int getMove(); //obtenerJugada //jugada tablero real 
-int obtenerMejorJugada(); //jugada tablero imaginario 
+int getBestMove(); //obtenerMejorJugada //jugada tablero imaginario 
 
 //GLOBAL VARIABLE
 char estGato[6][11];
@@ -41,44 +41,31 @@ int main(){
     {
         boxBusy = checkBusySlot(i);
     if (boxBusy == true)
-        cout << "ocupado";
+        cout << "occupied"; //ocupado
     else   
-        cout << "libre";
+        cout << "free"; //libre
 
     cout << endl;
     }
 
 /*
-    while(turno < 9 && ganador = false){
-        if(turno%2 == 0){
-            jugada = pedirJugada();
+    while(turn < 9 && winner = false){
+        if(turn%2 == 0){
+            move = requestMove();
         }else{
-            jugada = obtenerJugadaPC();
+            move = getMovePC();
         }
 
-        jugadaOK = revisarJugada(jugada);
-        if (jugadaOK == true){
-            colocarJugada();
-            ganador = revisarGanador();
+        moveOK = reviewPlay(move);
+        if (moveOK == true){
+            setMove();
+            winner = reviewWinner();
         }
-        if (ganador == true){
+        if (winner == true){
             cout << "Mensaje al ganador";
         }
     }
 */
-
-/*
-    do{
-        jugada = SeleccionarJugada();
-        casillaOcupada = comprobarCasillaOcupada(jugada);
-        if(casillaOcupada == true){
-            //colocarJugada(jugada);
-            //system("clear");
-            //construirTablero();
-        cout << "Otra vez";
-        }
-    }while(casillaOcupada == true);
-    */
     return 0; 
 }
 
@@ -184,34 +171,36 @@ void createBoard()
     }
 }
 
+/*
 int getMove(){
     srand();
     //Revisar que la PC gana 
-    move = obtenerMejorJugada(PC);
+    move = getBestMove(PC);
     if (move != -1){
         return move;
     }
 
-    move = obtenerMejorJugada(HUMAN);
+    move = getBestMove(HUMAN);
     if(move != -1){
         return move; 
     }
 
     //return 1 + srand()%9; //random entre 1 y 9
 }
+*/
 
 //Jugada de TABLERO IMAGINARIO
 /*
-void colocarJugadaImaginaria(int jugada){
+void colocarJugadaImaginaria(int move){
     char moveValue; 
 
-    if(turnoJugador%2==0){ //Parees
+    if(playerturn%2==0){ //Parees
         moveValue = 'x';
     }else{
         moveValue = 'o';
     }
-    if(jugada == 1){
-        areaJuego[0][0] = moveValue;
+    if(move == 1){
+        gamearea[0][0] = moveValue;
     }
     //cout << moveValue << endl; 
 }

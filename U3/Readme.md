@@ -1,15 +1,16 @@
 <h1 align="left"><strong>
 <div align="right">SofyO
 <img alt="C++" height="50" src="imagenes/descarga.jpeg">
-</div>
+</div><br>
 
-# **UNIT 3**
+# <div align="center"> **UNIT 3: CAT´S NAME**
 
 ## **Content**
 <br>
 
 > [Ejecución y uso](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Ejec_Uso.md)
 <br>
+
 
 > [Diagrama de flujo](https://github.com/UP210419/UP210419_CPP/blob/main/U3/DF.cpp)
 <br>

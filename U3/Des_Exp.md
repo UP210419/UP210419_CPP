@@ -1,3 +1,10 @@
+# <div align="center"> **CAT´S GAME**
+
+## **Developing**
+
+### ***Process***
+
+```c++
 #include <iostream>
 
 
@@ -296,3 +303,7 @@ void reviewWinner(){
         }
     }while(winnerplayer != 1);
 }
+```
+
+## **Explanation**
+This program shows a board drawn from the cat game, in which a user will play a game with the PC. 

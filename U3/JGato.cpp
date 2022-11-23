@@ -4,72 +4,91 @@
 using namespace std; 
 
 //FUNCTION PROTOTYPE
-void setMove(int); //colocarJugada
-int selectMove(); //seleccionarJugada
+void setGame(int); //colocarJugada
+int selectGame(); //seleccionarJugada
 bool checkBusySlot(int); //
 void createBoard(); //crearTablero
+void printPlayMatrix();
+//void estructuraGato(); 
 //void requestMove(); //pedirJugada
 //void reviewPlay(); //revisarJugada
-//void reviewWinner(); revisarGanador
-int getMove(); //obtenerJugada //jugada tablero real 
-int getBestMove(); //obtenerMejorJugada //jugada tablero imaginario 
+void reviewWinner(); //revisarGanador
+int getGame(); //obtenerJugada //jugada tablero real 
+int getBestGame(); //obtenerMejorJugada //jugada tablero imaginario 
 
 //GLOBAL VARIABLE
-char estGato[6][11];
-int playerturn = 1; //turnoJugador
+char estructGato[6][11];
+int playerturn = 0; //turnojugador
 //areaJuego
 char gamearea[3][3] = {{'1', '2', '3'},
-                       {'4', 'o', '6'},
+                       {'4', '5', '6'},
                        {'7', '8', '9'}};
-int move; //jugada
-int winner; //ganador
-const string PC = "Maquina"; //ya no le puedes asignar otro valor 
-const string HUMAN = "Humano"; //Humano
-const string BOARD = "Real"; //Tablero
-const string BOARD = "Imaginario";
 
-int main(){
-    
-    int move; 
-    //casillaOcupada
-    bool boxBusy = true; 
+int game;                      // jugada
+bool winner = false;           // ganador
+const string PC = "Maquina";   // ya no le puedes asignar otro valor
+const string HUMAN = "Humano"; // Humano
+const string BOARD = "Real";   // Tablero
+const string BOARDIMAGINARY = "Imaginario";
+
+//bool esGanador;
+
+int main()
+{
+
+    int game;
+    // casillaOcupada
+    bool boxBusy = true;
     system("cls");
-    move = selectMove();
-    cout << move << endl;
 
-    for (int i = 1; i < 9; i++)
+    while (playerturn < 9 && winner == false)
     {
-        boxBusy = checkBusySlot(i);
-    if (boxBusy == true)
-        cout << "occupied"; //ocupado
-    else   
-        cout << "free"; //libre
+        //system("cls"); // limpio
+        do
+        {
+            game = selectGame();
+            cout << game << endl;
+            boxBusy = checkBusySlot(game);
 
-    cout << endl;
-    }
-
-/*
-    while(turn < 9 && winner = false){
-        if(turn%2 == 0){
-            move = requestMove();
-        }else{
-            move = getMovePC();
-        }
-
-        moveOK = reviewPlay(move);
-        if (moveOK == true){
-            setMove();
-            winner = reviewWinner();
-        }
-        if (winner == true){
-            cout << "Mensaje al ganador";
+        } while (boxBusy == true);
+        if (boxBusy == false)
+        { // esta libre
+            setGame(game);
+            //system("cls"); <- 
+            printPlayMatrix();
+            //winner = reviewWinner();
+            playerturn++; // sigue el otro
         }
     }
-*/
-    return 0; 
+    /*
+    if (winner == true)
+    cout << "Ganaste";
+    else 
+    cout << "Empate";
+    */
+
+    /*
+        while(turn < 9 && winner = false){
+            if(turn%2 == 0){
+                game = requestGame();
+            }else{
+                game = getGamePC();
+            }
+
+            gameOK = reviewPlay(game);
+            if (gameOK == true){
+                setGame();
+                winner = reviewWinner();
+            }
+            if (winner == true){
+                cout << "Mensaje al ganador";
+            }
+        }
+    */
+    return 0;
 }
 
-void setMove(int move){
+void setGame(int game){
     char moveValue; //valorJugada
 
     if(playerturn%2==0){ //Parees
@@ -77,62 +96,78 @@ void setMove(int move){
     }else{
         moveValue = 'o';
     }
-    if(move == 1){
+    if(game == 1)
         gamearea[0][0] = moveValue;
-    }
-    cout << moveValue << endl; 
+    else if (game == 2)
+        gamearea[0][1] = moveValue;
+    else if (game == 3)
+        gamearea[0][2] = moveValue;
+    else if (game == 4)
+        gamearea[1][0] = moveValue;
+    else if (game == 5)
+        gamearea[1][1] = moveValue;
+    else if (game == 6)
+        gamearea[1][2] = moveValue;
+    else if (game == 7)
+        gamearea[2][0] = moveValue;
+    else if (game == 8)
+        gamearea[2][1] = moveValue;
+    else if (game == 9)
+        gamearea[2][2] = moveValue;
 }
 
-int selectMove(){
-
-    do{
+int selectGame()
+{
+    int game;
+    do
+    {
         cout << "Dame tu jugada: ";
-        cin >> move; 
-    }while(move < 1 || move > 9);
-        
-        return move; 
+        cin >> game;
+    } while (game < 1 || game > 9);
+    cout << "ya sali" << endl;
+    return game;
 }
 
-bool checkBusySlot(int move){
-    int i, j;
-    if(move == 1)
+bool checkBusySlot(int game){
+    int row, col;
+    if(game == 1)
     {
-        i = 0;
-        j = 0;
-    }else if(move == 2)
+        row = 0;
+        col = 0;
+    }else if(game == 2)
     {
-        i = 0;
-        j = 1; 
-    }else if(move == 3)
+        row = 0;
+        col = 1; 
+    }else if(game == 3)
     {
-        i = 0;
-        j = 2; 
-    }else if(move == 4)
+        row = 0;
+        col = 2; 
+    }else if(game == 4)
     {
-        i = 1;
-        j = 0; 
-    }else if(move == 5)
+        row = 1;
+        col = 0; 
+    }else if(game == 5)
     {
-        i = 1;
-        j = 1; 
-    }else if(move == 6)
+        row = 1;
+        col = 1; 
+    }else if(game == 6)
     {
-        i = 1;
-        j = 2; 
-    }else if(move == 7)
+        row = 1;
+        col = 2; 
+    }else if(game == 7)
     {
-        i = 2;
-        j = 0; 
-    }else if(move == 8)
+        row = 2;
+        col = 0; 
+    }else if(game == 8)
     {
-        i = 2;
-        j = 1; 
-    }else if(move == 9)
+        row = 2;
+        col = 1; 
+    }else if(game == 9)
     {
-        i = 2;
-        j = 2; 
+        row = 2;
+        col = 2; 
     }
-    if(gamearea[i][j] == 'x' || gamearea[i][j] == 'o')
+    if(gamearea[row][col] == 'x' || gamearea[row][col] == 'o')
     {
         return true;
     }else{
@@ -148,41 +183,41 @@ void createBoard()
     {
         for (int col = 0; col < 11; col++)
         {
-            if (row = 0 || row = 3 || row = 6 || row = 8)
+            if (row == 0 || row == 3 || row == 6 || row == 8)
             {
                 cout << "   |   |   " << endl;
             }
-            else if (row = 1 || row = 4 || row = 7)
+            else if (row == 1 || row == 4 || row == 7)
             {
                 if(x = 1){
-                    cout << " " << gamearea[x-1][y] << "   |   " << gamearea[x-1][y] << "   |   " << gamearea[x-1][y] << "   ";
+                    cout << " " << gamearea[x-1][y] << "   |   " << gamearea[x-1][y] << "   |   " << gamearea[x-1][y] << "   " << endl;
                 }
                 if(x = 4){
-                    cout << " " << gamearea[x-3][y] << "   |   " << gamearea[x-3][y] << "   |   " << gamearea[x-3][y] << "   ";
+                    cout << " " << gamearea[x-3][y] << "   |   " << gamearea[x-3][y] << "   |   " << gamearea[x-3][y] << "   " << endl;
                 }
                 if(x = 7){
-                    cout << " " << gamearea[x-4][y] << "   |   " << gamearea[x-4][y] << "   |   " << gamearea[x-4][y] << "   ";
+                    cout << " " << gamearea[x-4][y] << "   |   " << gamearea[x-4][y] << "   |   " << gamearea[x-4][y] << "   " << endl;
                 }
                 y++; 
-            }else if(row = 2 || row = 5){
-                cout << "___|___|___";
+            }else if(row == 2 || row == 5){
+                cout << "___|___|___" << endl;
             }
         }
     }
 }
 
 /*
-int getMove(){
+int getGame(){
     srand();
     //Revisar que la PC gana 
-    move = getBestMove(PC);
-    if (move != -1){
-        return move;
+    game = getBestGame(PC);
+    if (game != -1){
+        return game;
     }
 
-    move = getBestMove(HUMAN);
-    if(move != -1){
-        return move; 
+    game = getBestGame(HUMAN);
+    if(game != -1){
+        return game; 
     }
 
     //return 1 + srand()%9; //random entre 1 y 9
@@ -191,7 +226,7 @@ int getMove(){
 
 //Jugada de TABLERO IMAGINARIO
 /*
-void colocarJugadaImaginaria(int move){
+void colocarJugadaImaginaria(int game){
     char moveValue; 
 
     if(playerturn%2==0){ //Parees
@@ -199,22 +234,54 @@ void colocarJugadaImaginaria(int move){
     }else{
         moveValue = 'o';
     }
-    if(move == 1){
+    if(game == 1){
         gamearea[0][0] = moveValue;
     }
     //cout << moveValue << endl; 
 }
 */ 
 
-/*
-//var esGanador; 
-if(areaJuego[0][0] != ' ' & areaJuego[0][1] == areaJuego[0][0] & areaJuego[0][2] == areaJuego[0][0]
-    || areaJuego[1][0] != ' ' & areaJuego[1][1] == areaJuego[1][0] & areaJuego[1][2] == areaJuego[1][0]
-        || areaJuego[2][0] != ' ' & areaJuego[2][1] == areaJuego[2][0] & areaJuego[2][2] == areaJuego[2][0]
+void printPlayMatrix(){
+    for (int row = 0; row < 3; row++)
+    {
+        for (int col = 0; col < 3; col++)
+        {
+            cout << gamearea[row][col] << " ";
+        }
+        cout << endl;
         
-            || areaJuego[0][0] != ' ' & areaJuego[1][0] == areaJuego[0][0] & areaJuego[2][0] == areaJuego[0][0]
-                || areaJuego[1][0] != ' ' & areaJuego[1][1] == areaJuego[0][1] & areaJuego[2][1] == areaJuego[0][1]
-                    || areaJuego[2][0] != ' ' & areaJuego[2][1] == areaJuego[2][0] & areaJuego[2][2] == areaJuego[2][0]){
-    esGanador = true; 
+    }
+    
 }
-*/
+
+void reviewWinner(){
+    //bool esGanador; 
+    if(gamearea[0][0] != 'x' && gamearea[0][1] == gamearea[0][0] && gamearea[0][2] == gamearea[0][0]
+        || gamearea[1][0] != 'x' && gamearea[1][1] == gamearea[1][0] && gamearea[1][2] == gamearea[1][0]
+            || gamearea[2][0] != 'x' && gamearea[2][1] == gamearea[2][0] && gamearea[2][2] == gamearea[2][0]
+                
+                || gamearea[0][0] != 'x' && gamearea[1][0] == gamearea[0][0] && gamearea[2][0] == gamearea[0][0]
+                    || gamearea[0][1] != 'x' && gamearea[1][1] == gamearea[0][0] && gamearea[2][1] == gamearea[0][0]
+                        || gamearea[0][2] != 'x' && gamearea[1][2] == gamearea[0][0] && gamearea[2][2] == gamearea[0][0]
+                        
+                            || gamearea[0][0] != 'x' && gamearea[1][1] == gamearea[0][0] && gamearea[2][2] == gamearea[0][0]
+                                || gamearea[0][2] != 'x' && gamearea[1][1] == gamearea[0][2] && gamearea[2][0] == gamearea[0][2])
+    {
+                                    esGanador = true; 
+
+    }
+    if(gamearea[0][0] != 'o' && gamearea[0][1] == gamearea[0][0] && gamearea[0][2] == gamearea[0][0]
+        || gamearea[1][0] != 'o' && gamearea[1][1] == gamearea[1][0] && gamearea[1][2] == gamearea[1][0]
+            || gamearea[2][0] != 'o' && gamearea[2][1] == gamearea[2][0] && gamearea[2][2] == gamearea[2][0]
+                
+                || gamearea[0][0] != 'o' && gamearea[1][0] == gamearea[0][0] && gamearea[2][0] == gamearea[0][0]
+                    || gamearea[0][1] != 'o' && gamearea[1][1] == gamearea[0][0] && gamearea[2][1] == gamearea[0][0]
+                        || gamearea[0][2] != 'o' && gamearea[1][2] == gamearea[0][0] && gamearea[2][2] == gamearea[0][0]
+                        
+                            || gamearea[0][2] != 'o' && gamearea[1][2] == gamearea[0][0] && gamearea[2][2] == gamearea[0][0]
+                                || gamearea[0][2] != 'o' && gamearea[1][2] == gamearea[0][0] && gamearea[2][2] == gamearea[0][0])
+    {
+                                    esGanador = true;
+
+    }
+}

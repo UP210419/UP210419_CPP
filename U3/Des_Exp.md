@@ -66,13 +66,15 @@ int main()
             printPlayMatrix();
             //winner = reviewWinner();
             if (winnerplayer == 1){
-                //cout << "Gana jugador X";
+                //cout << "Win player X";
             }
             if(winnerplayer == 2){
-                //cout << "Gana jugador O";
+                //cout << "Win player O";
             }
             //cout << winnerplayer << endl; 
-            
+            else{
+                //cout "It's a tie";
+            }
             playerturn++; // sigue el otro
         }
     } 

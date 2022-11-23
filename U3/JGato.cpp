@@ -59,12 +59,12 @@ int main()
             printPlayMatrix();
             //winner = reviewWinner();
             if (winnerplayer == 1){
-                cout << "Gana jugador X";
+                //cout << "Gana jugador X";
             }
             if(winnerplayer == 2){
-                cout << "Gana jugador O";
+                //cout << "Gana jugador O";
             }
-            cout << winnerplayer << endl; 
+            //cout << winnerplayer << endl; 
             
             playerturn++; // sigue el otro
         }

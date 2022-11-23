@@ -1,9 +1,9 @@
 <h1 align="left"><strong>
-<div align="right">SofyO
-<img alt="C++" height="50" src="imagenes/descarga.jpeg">
+<div align="right">A. Sofia Orozco Morán
+<img alt="C++" height="50" src="Caps/descarga.jpeg">
 </div><br>
 
-# <div align="center"> **UNIT 3: CAT´S NAME**
+# <div align="center"> **UNIT 3: CAT´S GAME**
 
 ## **Content**
 <br>

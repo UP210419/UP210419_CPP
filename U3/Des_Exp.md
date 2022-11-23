@@ -1,8 +1,8 @@
 # <div align="center"> **CAT´S GAME**
 
-## **Developing**
+## <div align="center"> **Developing**
 
-### ***Process***
+## ***Process***
 
 ```c++
 #include <iostream>
@@ -66,12 +66,12 @@ int main()
             printPlayMatrix();
             //winner = reviewWinner();
             if (winnerplayer == 1){
-                cout << "Gana jugador X";
+                //cout << "Gana jugador X";
             }
             if(winnerplayer == 2){
-                cout << "Gana jugador O";
+                //cout << "Gana jugador O";
             }
-            cout << winnerplayer << endl; 
+            //cout << winnerplayer << endl; 
             
             playerturn++; // sigue el otro
         }
@@ -305,5 +305,12 @@ void reviewWinner(){
 }
 ```
 
-## **Explanation**
-This program shows a board drawn from the cat game, in which a user will play a game with the PC. 
+## <div align="center"> **Explanation**
+This program shows a board drawn from the cat game, in which a user will play a game against the PC.
+
+## <div align="center"> ***Screens***
+<img src="./Caps/EvdGATO_1.jpeg">
+
+<img src="./Caps/EvdGATO_2.jpeg">
+
+<img src="./Caps/EvdGATO_3.jpeg">

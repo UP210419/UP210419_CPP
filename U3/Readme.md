@@ -8,13 +8,13 @@
 ## **Content**
 <br>
 
-> [Ejecución y uso](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Readme.md)
+> [Ejecución y uso](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Ejec_Uso.md)
 <br>
 
-> [Diagrama de flujo](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Readme.md)
+> [Diagrama de flujo](https://github.com/UP210419/UP210419_CPP/blob/main/U3/DF.cpp)
 <br>
 
-> [Desarrollo y explicación](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Readme.md)
+> [Desarrollo y explicación](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Des_exp.md)
 <br>
 
-> [Conclusiones](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Readme.md)
+> [Conclusiones](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Conc.cpp)

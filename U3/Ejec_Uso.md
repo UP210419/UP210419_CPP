@@ -27,7 +27,7 @@ This program includes various functions that they make use of, which are the fol
 
 - ***game()***, the game of the move that the users will make.
 
-- ***swap_player_and_marker()**, swaps the player and the player after the game, to indicate and give the user his turn when it's time.
+- ***swap_player_and_marker()***, swaps the player and the player after the game, to indicate and give the user his turn when it's time.
 <br><br>
 
 ### **Game variables**

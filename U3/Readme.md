@@ -20,7 +20,7 @@
 > [Flowchart](https://github.com/UP210419/UP210419_CPP/blob/main/U3/DF.md)
 <br>
 
-> [Development and Explanation](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Des_exp.md)
+> [Development and Explanation](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Des_Exp.md)
 <br>
 
-> [Conclusions](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Conc.cpp)
+> [Conclusions](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Conc.md)

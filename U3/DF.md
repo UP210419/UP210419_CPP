@@ -12,5 +12,6 @@ Shows the declaration of our variables used in the main function, both those tha
 <br>
 <br><br>
 
+<div align="left">
 
 [**Back to Readme**](https://github.com/UP210419/UP210419_CPP/blob/main/U3/Readme.md) 

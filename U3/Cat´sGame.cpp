@@ -6,15 +6,15 @@ char board [3][3] = {{'1','2','3'},
                      {'4','5','6'},
                      {'7','8','9'}};
 
-void createBoard(); //Crea tablero de juego
-bool setmarker(int slot); //Coloca jugada en el tablero
-char current_marker; //Marca de la jugada
-int player; //Indica el jugador 
-string player1; //Primer jugador 
-string player2; //Segundo jugador 
-int winner(); //Indica el ganador
-void game(); //Es la jugada de la partida 
-void swap_player_and_marker(); //Intercambia jugador y marcador 
+void createBoard(); 
+bool setMarker(int slot); 
+char current_marker; 
+int player; 
+string player1; 
+string player2;  
+int winner(); 
+void game(); 
+void swap_player_and_marker(); 
 
 int main (){
     
@@ -41,7 +41,7 @@ void createBoard(){
     cout <<" "<<board[2][0]<<" | "<<board[2][1]<<" | "<< board[2][2]<<endl;
 }
 
-bool setmarker(int slot){
+bool setMarker(int slot){
     int row;
     int col;
    if(slot == 1){
@@ -127,7 +127,7 @@ void game(){
             i--;
             continue;
         }
-        if(!setmarker(slot)){
+        if(!setMarker(slot)){
             cout << "The slot is occupied.\n Try another slot\n";
             i--;
             continue;

@@ -1,6 +1,6 @@
 # <div align="center"> **CAT´S GAME**
 
-## <div align="center"> **Developing**
+## <div align="center"> ***Developing of program***
 
 ## ***Process***
 
@@ -14,7 +14,7 @@ char board [3][3] = {{'1','2','3'},
                      {'7','8','9'}};
 
 void createBoard(); //Crea tablero de juego
-bool setmarker(int slot); //Coloca jugada en el tablero
+bool setMarker(int slot); //Coloca jugada en el tablero
 char current_marker; //Marca de la jugada
 int player; //Indica el jugador 
 string player1; //Primer jugador 
@@ -48,7 +48,7 @@ void createBoard(){
     cout <<" "<<board[2][0]<<" | "<<board[2][1]<<" | "<< board[2][2]<<endl;
 }
 
-bool setmarker(int slot){
+bool setMarker(int slot){
     int row;
     int col;
    if(slot == 1){
@@ -134,7 +134,7 @@ void game(){
             i--;
             continue;
         }
-        if(!setmarker(slot)){
+        if(!setMarker(slot)){
             cout << "The slot is occupied.\n Try another slot\n";
             i--;
             continue;
@@ -168,18 +168,23 @@ void swap_player_and_marker(){
 }
 ```
 
-## <div align="center"> **Explanation**
+## <div align="center"> ***Explanation***
 This program shows a board drawn from the cat game, in which a user will play a game against the PC.
 
 In the following images that are seen here, the evidence of the complete process is shown during the execution of the program.
 
 ## <div align="center"> ***Screens***
-<img src="./Caps/Players.jpeg">
 
-<img src="./Caps/Marker.jpeg">
+**Players** <img src="./Caps/Players.jpeg">
+<br> 
 
-<img src="./Caps/SelectSlot.jpeg">
+**Marker of players** <img src="./Caps/Marker.jpeg">
+<br>
 
-<img src="./Caps/Board.jpeg">
+**Game board space selection** <img src="./Caps/SelectSlot.jpeg">
+<br>
 
-<img src="./Caps/Winner.jpeg">
+**Other player's turn, select the box** <img src="./Caps/Board.jpeg">
+<br> 
+
+**Is there a winner or is it a tie** <img src="./Caps/Winner.jpeg">

@@ -2,6 +2,8 @@
 
 ## <div align="center"> ***Conclusions***
 
-The principal objective of this code was to create a representation of the "Game of the Cat", with the use of Functions made in C++, that can show the drawn game board, as well as, a move made by the user with the PC, and, also , indicating if there was a winner and who was such a winner, if there was not, and in other cases, if there was a tie between the participants.
+El objetivo principal de este código fue crear una representación del "Juego del Gato", con el uso de Funciones hechas en C++, que puede mostrar el tablero de juego dibujado, así como, el cual pueda permitir llevar a cabo una partida de dos jugadores que serán los usuarios, y, también, que determine si hubo ganador o no y quién resultó ser dicho ganador, y en otros casos, si hubo empate entre los participantes.
 
-Regarding said code, it was possible to develop the design of such a game board, such as the one that was shown when the users started executing the program. However, it was not possible to indicate whether or not there is a winner in the game, or if it was a tie, so the goal for the activity was not achieved.
+Respecto a dicho código, se logró desarrollar el diseño de un tablero de juego de este tipo, como el que se muestra cuando los usuarios comienzan la ejecución del programa. Además de lo mencionado, fue posible hacer que el código pida y registre los nombres de cada uno de los jugadores, al igual que el símbolo con el cual cada uno se identificará en el tablero al momento de jugarlo, y al final, se indica quién fue el ganador, luego de que el código lo haya identificado durante la partida.
+
+However, there were both difficulties and limitations during the performance of the activity, after several days of this, which was to ensure that the game could be played by a user and the PC as the players, but after all, to Despite the fact that at first it was somewhat difficult to achieve the main objective, here we have it.

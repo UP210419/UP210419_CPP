@@ -1,10 +1,3 @@
-# <div align="center"> **CAT´S GAME**
-
-## <div align="center"> **Developing**
-
-## ***Process***
-
-```c++
 #include <iostream>
 
 using namespace std;
@@ -24,7 +17,7 @@ void game(); //Es la jugada de la partida
 void swap_player_and_marker(); //Intercambia jugador y marcador 
 
 int main (){
-
+    
     system("cls");
     cout << "***** GAME OF THE CAT ***** \n";
 
@@ -166,20 +159,3 @@ void swap_player_and_marker(){
         player = 2;
     }else player = 1;
 }
-```
-
-## <div align="center"> **Explanation**
-This program shows a board drawn from the cat game, in which a user will play a game against the PC.
-
-In the following images that are seen here, the evidence of the complete process is shown during the execution of the program.
-
-## <div align="center"> ***Screens***
-<img src="./Caps/Players.jpeg">
-
-<img src="./Caps/Marker.jpeg">
-
-<img src="./Caps/SelectSlot.jpeg">
-
-<img src="./Caps/Board.jpeg">
-
-<img src="./Caps/Winner.jpeg">

@@ -4,9 +4,12 @@
 <h4 align="right"><strong>ISC03B
 </div><br>
 
-# <div align="center"><font color="Aqua"> **UNIT 3: CAT´S GAME**
+# <div align="center"> **UNIT 3: CAT´S GAME**
 
-## **Content**
+#### **The game of Jack or three in a row is a game played between two players, where each player is assigned a different symbol (usually ❌ and ⭕), and spaces are marked on a board of 3\times 3×3 squares, taking alternate shifts; the game ends when one of the players places three of their symbols in line or there are no more empty spaces on the board.**
+<br>
+
+## ***Content***
 <br>
 
 <font face="Book Antiqua">

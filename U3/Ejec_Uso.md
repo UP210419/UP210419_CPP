@@ -1,6 +1,8 @@
 # <div align="center"> **CAT´S GAME**
 
-## ***Execution***
+## <div align="center"> ***Execution***
+<br> 
+
 Below are the code execution instructions:
 
 1. Start **execution** of the code.

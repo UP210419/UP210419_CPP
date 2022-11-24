@@ -19,7 +19,7 @@ Below are the code execution instructions:
 
 This program includes various functions that they make use of, which are the following:
 
-- ***SetMarker()***, is the number of the square that will be occupied by the mark, to put it on the game board.
+- ***setMarker()***, is the number of the square that will be occupied by the mark, to put it on the game board.
 
 - ***winner()***, to determine the winner of the game among the participants.
 

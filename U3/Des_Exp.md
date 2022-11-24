@@ -175,19 +175,24 @@ In the following images that are seen here, the evidence of the complete process
 
 ## <div align="center"> ***Screens***
 
-**Players** <img src="./Caps/Players.jpeg">
+**Players** 
+<img src="./Caps/Players.jpeg">
 <br> 
 
-**Marker of players** <img src="./Caps/Marker.jpeg">
+**Marker of players** 
+<img src="./Caps/Marker.jpeg">
 <br>
 
-**Game board space selection** <img src="./Caps/SelectSlot.jpeg">
+**Game board space selection** 
+<img src="./Caps/SelectSlot.jpeg">
 <br>
 
-**Other player's turn, select the box** <img src="./Caps/Board.jpeg">
+**Other player's turn, select the box** 
+<img src="./Caps/Board.jpeg">
 <br> 
 
-**Is there a winner or is it a tie** <img src="./Caps/Winner.jpeg">
+**Is there a winner or is it a tie** 
+<img src="./Caps/Winner.jpeg">
 <br><br>
 
 

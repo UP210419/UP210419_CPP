@@ -19,15 +19,15 @@ Below are the code execution instructions:
 
 This program includes various functions that they make use of, which are the following:
 
-- ***SetMarker***, is the number of the square that will be occupied by the mark, to put it on the game board.
+- ***SetMarker()***, is the number of the square that will be occupied by the mark, to put it on the game board.
 
-- ***winner***, to determine the winner of the game among the participants.
+- ***winner()***, to determine the winner of the game among the participants.
 
-- ***createBoard***, the game board that will be drawn by the program, representing the game.
+- ***createBoard()***, the game board that will be drawn by the program, representing the game.
 
-- ***game***, the game of the move that the users will make.
+- ***game()***, the game of the move that the users will make.
 
-- ***swap_player_and_marker**, swaps the player and the player after the game, to indicate and give the user his turn when it's time.
+- ***swap_player_and_marker()**, swaps the player and the player after the game, to indicate and give the user his turn when it's time.
 <br><br>
 
 ### **Game variables**
